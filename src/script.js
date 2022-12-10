@@ -29,7 +29,7 @@ function roundOffRules(num, isDefaultData = false) {
     }
     // Validate Case for this type of input: "1234." or "."
     let roundOffValue;
-    let rule;
+    let rule = 'GR';
     if (num.match(regexInfo.noOfDecimalDigits)?.toString().length > regexInfo.roundOffPlace) {
         const beforeRounOffDigit = num.match(regexInfo.beforeRounOffDigit_regx)?.[0];
         const roundOffDigit = Number(num.match(regexInfo.roundOffDigit_regx)?.[0]);
@@ -47,7 +47,6 @@ function roundOffRules(num, isDefaultData = false) {
         }
     } else {
         roundOffValue = num;
-        rule = "GN";
     }
 
     // Beaufity number upto two decimal places
@@ -63,7 +62,8 @@ function roundOffRules(num, isDefaultData = false) {
 }
 
 function getData(arr) {
-    let result = `<table style="width:100%">
+    let result = `<h3>Example (Round Off upto ${regexInfo.roundOffPlace} Decimal Places)</h3>
+                    <table style="width:100%">
                     <tr>
                         <th>Actual Number</th>
                         <th>Round-Off Value</th>
