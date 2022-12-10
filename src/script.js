@@ -29,15 +29,16 @@ function roundOffRules(num, isDefaultData = false) {
     }
     // Validate Case for this type of input: "1234." or "."
     let roundOffValue;
-    if(num.match(regexInfo.noOfDecimalDigits)?.toString().length > regexInfo.roundOffPlace) {
+    let rule;
+    if (num.match(regexInfo.noOfDecimalDigits)?.toString().length > regexInfo.roundOffPlace) {
         const beforeRounOffDigit = num.match(regexInfo.beforeRounOffDigit_regx)?.[0];
         const roundOffDigit = Number(num.match(regexInfo.roundOffDigit_regx)?.[0]);
         const firstDiscardDigit = Number(num.match(regexInfo.firstDiscardDigit_regx)?.[0]);
         const anyNonZeroDiscardDigit = Number(num.match(regexInfo.anyNonZeroDiscardDigit_regx)?.[0]);
         const idOddRoundOffDigit = /[13579]/g.test(roundOffDigit);
         const carry = !firstDiscardDigit ? 0 : firstDiscardDigit > 5 ? 1 : firstDiscardDigit < 5 ? 0 : anyNonZeroDiscardDigit ? 1 : idOddRoundOffDigit ? 1 : 0;
-        const rule = !firstDiscardDigit ? 'GR' : firstDiscardDigit > 5 ? 'R1' : firstDiscardDigit < 5 ? 'R2' : anyNonZeroDiscardDigit ? 'R3' : idOddRoundOffDigit ? 'R4' : 'R5';
-        // console.log(beforeRounOffDigit, roundOffDigit, firstDiscardDigit, anyNonZeroDiscardDigit, '(',idOddRoundOffDigit,')', carry);
+        rule = !firstDiscardDigit ? 'GR' : firstDiscardDigit > 5 ? 'R1' : firstDiscardDigit < 5 ? 'R2' : anyNonZeroDiscardDigit ? 'R3' : idOddRoundOffDigit ? 'R4' : 'R5';
+        // console.log(beforeRounOffDigit, roundOffDigit, firstDiscardDigit, anyNonZeroDiscardDigit, '(',idOddRoundOffDigit,')', carry, rule);
 
         if (roundOffDigit === 9 && carry) {
             roundOffValue = (Number(`${beforeRounOffDigit}` + `${roundOffDigit ? roundOffDigit : 0}`) + Number(`0.${addDecimalDigits(regexInfo.roundOffPlace - 1)}${carry}`)).toString();
@@ -57,7 +58,7 @@ function roundOffRules(num, isDefaultData = false) {
         roundOffValue = roundOffValue.match(regexInfo.checkSign)?.length ? roundOffValue.replace(regexInfo.checkSign, '$&0') : ('0' + roundOffValue);
     }
 
-    console.log(`${roundOffValue} (${num}) --- ${isDefaultData}`);
+    // console.log(`${roundOffValue} (${num}) --- ${isDefaultData}`);
     return `<strong>${roundOffValue}</strong> ${rule ? ('<span style="color:red">(<strong>' + rule + '</strong>)</span>') : ''}`;
 }
 
@@ -94,8 +95,8 @@ function onSubmit() {
 }
 
 /**
-*  Show Sample Data
-*/
+ * Show Sample Data
+ */
 function onDPSubmit() {
     const n2 = document.getElementById("dcPlace").value;
     if (n2) {
