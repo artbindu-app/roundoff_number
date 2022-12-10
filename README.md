@@ -8,4 +8,4 @@
 
 ## How to Open
 Open html in browser.
-![DemoUI](https://github.com/artbindu/closed_decimal_round_off_rules/blob/main/demo/webUI.png)
+![See UI](https://artbindu.github.io/roundoffdecimal.github.io/)
