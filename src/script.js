@@ -62,7 +62,7 @@ function roundOffRules(num, isDefaultData = false) {
 }
 
 function getData(arr) {
-    let result = `<h3>Example (Round Off upto ${regexInfo.roundOffPlace} Decimal Places)</h3>
+    let result = `<h3><mark>Example (Round Off upto ${regexInfo.roundOffPlace} Decimal Places)</mark></h3>
                     <table style="width:100%">
                     <tr>
                         <th>Actual Number</th>

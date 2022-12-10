@@ -10,3 +10,8 @@ table, th, td {
 #sample_data {
     text-align: center;
 }
+
+mark {
+    background-color: rgb(255, 153, 0);
+    color: black;
+}
