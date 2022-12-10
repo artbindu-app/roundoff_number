@@ -8,4 +8,7 @@
 
 ## How to Open
 Open html in browser.
-![See UI](https://artbindu.github.io/roundoffdecimal.github.io/)
+![DemoUI](./demo/webUI.png)
+
+
+# [View Website](https://artbindu.github.io/roundoffdecimal.github.io/)
