@@ -2,13 +2,12 @@
 
 
 
-## Rules
-![Rules for Rounding Off Numbers](https://miro.medium.com/max/720/1*hEB1i4fDOk35lJS0KJguwA.webp)
+## Round-Off Rules
+![Rules for Rounding Off Numbers](https://artbindu.github.io/roundoff_decimal/demo/rules.png)
+
+## [Check Website](https://artbindu.github.io/roundoff_decimal/)
+## Website View
+![DemoUI](https://artbindu.github.io/roundoff_decimal/demo/webUI.png)
 
 
-## How to Open
-Open html in browser.
-![DemoUI](./demo/webUI.png)
 
-
-# [View Website](https://artbindu.github.io/roundoffdecimal.github.io/)
