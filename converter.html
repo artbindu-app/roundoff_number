@@ -20,7 +20,7 @@
         <div class="card">
             <div class="card-header">
                 <strong>
-                    <h1>Round Off Decimal Number</h1>
+                    <h1>Regularly used Basic Converter</h1>
                     <a href="https://github.com/artbindu">
                         <img width="15px" padding="1px" src="https://cdn.simpleicons.org/github"/>
                         Biswasindhu Mandal
@@ -28,28 +28,76 @@
                     </a>
                 </strong>
             </div>
-            <div class="card-body">
+            <div class="card-body converter">
+                <h4 style="padding-bottom: 25px;">Billion, Million, Trillion Converter</h4> 
                 <div>
-                    <hr />
-                    <h4>Billion, Million, Trillion Converter</h4>
-                    <div>
-                        <form class="form-inline" action=""> 
-                            <div>
-                                <input type="number" id="numberVal" value="0" placeholder="International Format" name="numberVal"> 
-                                <select name="w_TypeVal" id="w_TypeVal">
-                                    <option value="M">Million</option>
-                                    <option value="B">Billion</option>
-                                    <option value="T">Trillion</option>
-                                </select>
-                                <button type="button" onclick="onConvert()">Convert</button>
-                                <input type="number" id="i_number" value="0" placeholder="Indian Format" name="i_number"> 
-                                <select name="i_TypeVal" id="i_TypeVal">
-                                    <option value="L">Lakhs</option>
-                                    <option value="C">Crores</option>
-                                </select>
-                            </div>
-                          </form> 
-                    </div>
+                    <form class="form-inline" action=""> 
+                        <div>
+                            <input type="number" id="bmtInputValue01" value="" placeholder="International Format" name="bmtInputValue01"> 
+                            <select name="bmtInputType01" id="bmtInputType01">
+                                <option value="M" selected>Million</option>
+                                <option value="B">Billion</option>
+                                <option value="T">Trillion</option>
+                            </select>
+                            <button type="button" onclick="onBillionMillionTrillionConvert()">Convert</button>
+                            <input type="number" id="bmtInputValue02" value="" placeholder="Indian Format" name="bmtInputValue02"> 
+                            <select name="bmtInputType02" id="bmtInputType02">
+                                <option value="L" selected>Lakhs</option>
+                                <option value="C">Crores</option>
+                            </select>
+                        </div>
+                    </form> 
+                </div>
+            </div>
+            <div class="card-body converter">
+                <h4 style="padding-bottom: 25px;">BMI Calculator</h4> 
+                <div>
+                    <form class="form-inline" action=""> 
+                        <div>
+                            <input type="number" id="bmiInputValue01" value="" placeholder="Your Hight" name="bmiInputValue01"> 
+                            <select name="bmiInputType01" id="bmiInputType01">
+                                <option value="CM" selected>Centimeter</option>
+                                <option value="FI">Feet/Inches</option>
+                            </select>
+                            <input type="number" id="bmiInputValue02" value="" placeholder="Your Wight" name="bmiInputValue02"> 
+                            <select name="bmiInputType02" id="bmiInputType02">
+                                <option value="Kg" selected>Kg</option>
+                                <option value="Lbs">Pound</option>
+                            </select>
+                        </div>
+                        <div>
+                            <input type="number" id="bmiInputValue00" value="" placeholder="Your Age" name="bmiInputValue00"> 
+                            <select name="bmiInputType00" id="bmiInputType00" disabled>
+                                <option value="child" selected>Child(0-20)</option>
+                                <option value="adult">Adult(20-120)</option>
+                            </select>
+                            <button type="button" onclick="onBMIConvert()">Get BMI</button>
+                        </div>
+                        <div>    
+                            <b>BMI: </b>
+                            <input type="number" id="bmiOutputValue01" value="0.00" placeholder="Indian Format" name="bmiOutputValue01"> 
+                            <select name="bmiOutputType01" id="bmiOutputType01" disabled>
+                                <!-- Adult BMI Class & SubClass -->
+                                <option value="Underweight-Severe Thinness" selected>Underweight (Adult - Severe Thinness)</option>
+                                <option value="Underweight-Moderate Thinness">Underweight (Adult - Moderate Thinness)</option>
+                                <option value="Underweight-Mild Thinness">Underweight (Adult - Mild Thinness)</option>
+
+                                <option value="Normal Weight-Normal">Normal Weight (Adult - Normal)</option>
+                                <option value="Overweight-Overweight">Overweight (Adult - Overweight)</option>
+
+                                <option value="Obesity-Obese Class I">Obesity (Adult - Obese Class I)</option>
+                                <option value="Obesity-Obese Class II">Obesity (Adult - Obese Class II)</option>
+                                <option value="Obesity-Obese Class III">Obesity (Adult - Obese Class III)</option>
+                            <!-- </select>
+                            <select name="bmiOutputType012" id="bmiOutputType012" style="visibility: hidden;" disabled> -->
+                                <!-- Child BMI Class -->
+                                <option value="c-Underweight">Underweight (Child)</option>
+                                <option value="c-Healthy Weight">Healthy weight (Child)</option>
+                                <option value="c-At risk of Overweight">At risk of Overweight (Child)</option>
+                                <option value="c-Overweight">Overweight (Child)</option>
+                            </select>
+                        </div>
+                    </form> 
                 </div>
             </div>
         </div>
