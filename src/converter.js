@@ -108,6 +108,14 @@ function onBMIConvert(key = 'bmi_config') {
     //     val: document.getElementById('bmiOutputValue01').value,
     //     type: document.getElementById('bmiOutputType01').value
     // };
+    let _inputHeight = 0;
+    if (inputVal.height.type === 'FI') {
+        _inputHeight = inputVal.height.val?.match(/\d+/gi)?.filter(x => !isNaN(x))?.filter((x, i) => (i === 0 || i === 1));
+    } else {
+        _inputHeight = inputVal.height.val?.match(/\d+/gi)?.filter(x => !isNaN(x))?.filter((x, i) => i === 0);
+    }
+    inputVal.height.val = _inputHeight?.map((x, i) => i === 0 ? Number(x) : (Number(x) / 12))?.reduce((acc, ele) => acc + ele, 0);
+    console.log(`Filter Input Height: ${_inputHeight}  ${inputVal.height.type} \n Formatted Height: ${inputVal.height.val} ${inputVal.height.type}`);
 
     if (inputVal.weight.val > 0 && inputVal.height.val > 0 && inputVal.age.val > 0) {
         let _isChild = jsonData.age[Object.keys(jsonData.age)?.map(x => x.split(/\s+\-\s+/g))
@@ -118,14 +126,14 @@ function onBMIConvert(key = 'bmi_config') {
         console.log(inputVal, _bmi);
 
         let _bmiMeter_key = Object.keys(jsonData.bmi_chart[_isChild])?.map(x => x.split(/\s+\-\s+/g))
-                            ?.filter(x => _bmi >= x[0] && _bmi <= x[1])[0].join(' - ');
+            ?.filter(x => _bmi >= x[0] && _bmi <= x[1])[0].join(' - ');
         let _bmiMeter_val = jsonData.bmi_chart[_isChild][_bmiMeter_key];
         let _bmiMeter_subClassVal = '';
-        if(_isChild === 'adult') {
+        if (_isChild === 'adult') {
             _bmiMeter_subClassVal = '-' + jsonData.bmi_chart.adult_advance[
                 Object.keys(jsonData.bmi_chart.adult_advance)
-                        ?.map(x => x.split(/\s+\-\s+/g))
-                        ?.filter(x => _bmi >= x[0] && _bmi <= x[1])[0].join(' - ')
+                    ?.map(x => x.split(/\s+\-\s+/g))
+                    ?.filter(x => _bmi >= x[0] && _bmi <= x[1])[0].join(' - ')
             ];
         }
 
@@ -133,20 +141,18 @@ function onBMIConvert(key = 'bmi_config') {
         // document.getElementById("bmiOutputType012").style.visibility=_isChild === 'child' ? "visible" : "hidden"; 
 
         document.getElementById('bmiOutputValue01').value = _bmi;
-        document.getElementById('bmiOutputType01').value = _bmiMeter_val+_bmiMeter_subClassVal;
+        document.getElementById('bmiOutputType01').value = _bmiMeter_val + _bmiMeter_subClassVal;
         document.getElementById('bmiInputType00').value = _isChild.toLowerCase();
     } else {
         document.getElementById('bmiInputValue00').value = '';
         document.getElementById('bmiInputType00').selectedIndex = 0;
         document.getElementById('bmiInputValue01').value = '',
-        document.getElementById('bmiInputType01').selectedIndex = 0;
+            document.getElementById('bmiInputType01').selectedIndex = 0;
         document.getElementById('bmiInputValue02').value = '',
-        document.getElementById('bmiInputType02').selectedIndex = 0;
+            document.getElementById('bmiInputType02').selectedIndex = 0;
 
         document.getElementById('bmiOutputValue01').value = 0.00;
         document.getElementById('bmiOutputType01').selectedIndex = 0;
-        document.getElementById('bmiOutputValue02').value = 0.00;
-        document.getElementById('bmiOutputType02').selectedIndex = 0;
     }
 }
 
