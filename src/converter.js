@@ -61,29 +61,29 @@ const converterConfig = {
 function onBillionMillionTrillionConvert(key = 'billion_million_trillion_converter_config') {
     const jsonData = converterConfig[key];
     const wVal = {
-        val: document.getElementById('bmiInputValue01').value,
-        type: document.getElementById('bmiInputType01').value
+        val: document.getElementById('bmtInputValue01').value,
+        type: document.getElementById('bmtInputType01').value
     };
     const iVal = {
-        val: document.getElementById('bmiInputValue02').value,
-        type: document.getElementById('bmiInputType02').value
+        val: document.getElementById('bmtInputValue02').value,
+        type: document.getElementById('bmtInputType02').value
     };
 
     console.log(wVal, iVal);
     if (wVal.val) {
         let num = Number(wVal.val) * Number(jsonData.western[wVal.type]);
         num = num / Number(jsonData.indian[iVal.type]);
-        document.getElementById('bmiInputValue02').value = num;
+        document.getElementById('bmtInputValue02').value = num ? num : '';
     } else if (iVal.val) {
         let num = Number(iVal.val) * Number(jsonData.indian[iVal.type]);
         num = num / Number(jsonData.western[wVal.type]);
-        document.getElementById('bmiInputValue01').value = num;
+        document.getElementById('bmtInputValue01').value = num ? num : '';
     } else {
-        document.getElementById('bmiInputValue02').value = '';
-        document.getElementById('bmiInputType01').selectedIndex = 0;
+        document.getElementById('bmtInputValue02').value = '';
+        document.getElementById('bmtInputType01').selectedIndex = 0;
 
-        document.getElementById('bmiInputValue01').value = '';
-        document.getElementById('bmiInputType02').selectedIndex = 0;
+        document.getElementById('bmtInputValue01').value = '';
+        document.getElementById('bmtInputType02').selectedIndex = 0;
     }
     console.log('BM:', wVal);
 }
