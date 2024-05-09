@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./src/style.css" />
+    <!-- Page Title -->
+    <title>Round-Off Rules</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+    <div class="container">
+        <br>
+        <div class="card">
+            <div class="card-header">
+                <strong>
+                    <h1>Round Off Decimal Number</h1>
+                    <a href="https://github.com/artbindu">
+                        <img width="15px" padding="1px" src="https://cdn.simpleicons.org/github"/>
+                        Biswasindhu Mandal
+                        <img width="18px" padding="1px" src="./favicon.ico"/>
+                    </a>
+                </strong>
+            </div>
+            <div class="card-body">
+                <div>
+                    <hr />
+                    <h4>Billion, Million, Trillion Converter</h4>
+                    <div>
+                        <form class="form-inline" action=""> 
+                            <div>
+                                <input type="number" id="numberVal" value="0" placeholder="International Format" name="numberVal"> 
+                                <select name="w_TypeVal" id="w_TypeVal">
+                                    <option value="M">Million</option>
+                                    <option value="B">Billion</option>
+                                    <option value="T">Trillion</option>
+                                </select>
+                                <button type="button" onclick="onConvert()">Convert</button>
+                                <input type="number" id="i_number" value="0" placeholder="Indian Format" name="i_number"> 
+                                <select name="i_TypeVal" id="i_TypeVal">
+                                    <option value="L">Lakhs</option>
+                                    <option value="C">Crores</option>
+                                </select>
+                            </div>
+                          </form> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <!-- JS Scripts -->
+    <script src="./src/converter.js"></script>
+</body>
+
+</html>
