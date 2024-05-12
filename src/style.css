@@ -23,3 +23,6 @@ mark {
     margin: 10px;
     text-align: center;
 }
+p.uppercase {
+    text-transform: uppercase;
+}

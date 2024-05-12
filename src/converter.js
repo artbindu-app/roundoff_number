@@ -119,6 +119,7 @@ function onBMIConvert(key = 'bmi_config') {
     inputVal.height.val = _inputHeight?.map((x, i) => i === 0 ? Number(x) : (Number(x) / 12))?.reduce((acc, ele) => acc + ele, 0);
     console.log(`Filter Input Height: ${_inputHeight}  ${inputVal.height.type} \n Formatted Height: ${inputVal.height.val} ${inputVal.height.type}`);
 
+    if(!inputVal.age.val) inputVal.age.val = 20.01; // default age is adult (> 20)
     if (inputVal.weight.val > 0 && inputVal.height.val > 0 && inputVal.age.val > 0) {
         let _isChild = jsonData.age[Object.keys(jsonData.age)?.map(x => x.split(/\s+\-\s+/g))
             ?.filter(x => Number(inputVal.age.val) >= x[0] && Number(inputVal.age.val) <= x[1])[0].join(' - ')];
@@ -153,7 +154,7 @@ function onBMIConvert(key = 'bmi_config') {
         document.getElementById('bmiInputValue02').value = '',
             document.getElementById('bmiInputType02').selectedIndex = 0;
 
-        document.getElementById('bmiOutputValue01').value = 0.00;
+        document.getElementById('bmiOutputValue01').value = "0.00";
         document.getElementById('bmiOutputType01').selectedIndex = 0;
     }
 }
