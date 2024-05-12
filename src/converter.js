@@ -5,11 +5,13 @@
 const converterConfig = {
     billion_million_trillion_converter_config: {
         western: {
+            'BU': 1,
             'M': 1000000,
             'B': 1000000000,
             'T': 1000000000000
         },
         indian: {
+            'BU': 1,
             'L': 100000,
             'C': 10000000
         }
