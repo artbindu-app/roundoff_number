@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .center {
+            margin: auto;
+            width: 40%;
+            border: 3px solid #73AD21;
+            padding: 10px;
+        }
+        table, th, td {
+          border:1px solid black;
+        }
+        table {
+            width: 100%;
+        }
+        td {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="center">
+        <div id="output"></div>
+    </div>
+
+    <!-- <script src="index.js"></script> -->
+    <script>
+        function shoeCombinedData(arr1, arr2) {
+            if (arr1.length < arr2.length) {
+                let _temp = arr1; arr1 = arr2; arr2 = _temp;
+            }
+            
+            let st = `<table>`;
+            st += `<tr>
+                        <th>CURRENT</th>
+                        <th>LTS Version</th>
+                    </tr>`
+            for (let i=0; i<arr2.length; i++) {
+                st += `<tr>
+                            <th>${arr1[i]}</th>
+                            <th>${arr2[i] ? arr2[i] : ''}</th>
+                        </tr>`;
+            }
+            st += `</table>`
+            document.getElementById("output").innerHTML = st;
+        }
+        function getRequestCall() {
+            const api_url = 'https://nodejs.org/dist/index.json';
+            let req = new XMLHttpRequest();
+
+            req.open("GET", api_url);
+            // req.setRequestHeader("X-Requested-With", "XMLHttpRequest");
+            // req.setRequestHeader("Access-Control-Allow-Origin", "*");
+            // req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            req.onload = () => {
+                if (req.readyState === XMLHttpRequest.DONE) {
+                    if (req.status === 200) {
+                        console.log(JSON.parse(req.response));
+                        const currentNodeVersions = JSON.parse(req.response)
+                                        .filter(x => !(x.lts === false))
+                                        // .filter((x,i) => i<20)
+                                        .map(x => x = x.version.replace(/v/gi, ''));
+                        const ltsNodeVersion = JSON.parse(req.response)
+                                        .filter(x => (x.lts === false))
+                                        // .filter((x,i) => i<20)
+                                        .map(x => x = x.version.replace(/v/gi, ''));
+
+                        shoeCombinedData(currentNodeVersions, ltsNodeVersion);
+
+                        // const noLTS = JSON.parse(req.response).filter(x => !(x.lts === false)).filter((x,i) => i<20);
+                        // console.log(noLTS);
+                        // document.getElementById("output").innerHTML = noLTS.map(x => (x.version + " - " + x.lts)).join('</br>');
+                    } else {
+                        console.log(`Request failed with status code ${req.status} from url ${req.responseURL}`);
+                    }
+                }
+            };
+            req.onerror = error => {
+                console.log(`Request failed with error ${error.type}`);
+            };
+            req.send();
+        }
+        getRequestCall();
+
+    </script>
+</body>
+
+</html>
