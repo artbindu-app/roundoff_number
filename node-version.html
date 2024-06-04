@@ -3,20 +3,25 @@
 
 <head>
     <style>
+        body {
+            background-color: #d9e4cb;
+        }
         .center {
             margin: auto;
             width: 40%;
             border: 3px solid #73AD21;
             padding: 10px;
         }
-        table, th, td {
-          border:1px solid black;
-        }
         table {
             width: 100%;
+            border:2px solid black;
+        }
+        th {
+          border:1px solid #73AD21;
         }
         td {
             text-align: center;
+            border: 1px solid #73AD21;
         }
     </style>
 
@@ -53,9 +58,6 @@
             let req = new XMLHttpRequest();
 
             req.open("GET", api_url);
-            // req.setRequestHeader("X-Requested-With", "XMLHttpRequest");
-            // req.setRequestHeader("Access-Control-Allow-Origin", "*");
-            // req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
             req.onload = () => {
                 if (req.readyState === XMLHttpRequest.DONE) {
                     if (req.status === 200) {
