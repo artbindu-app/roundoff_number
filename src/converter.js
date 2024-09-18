@@ -1,6 +1,4 @@
 
-
-
 // ------------------------------
 const converterConfig = {
     billion_million_trillion_converter_config: {
@@ -59,6 +57,161 @@ const converterConfig = {
         }
     }
 };
+
+let liveLocation = null;
+const muhurutSeries = [
+    {
+        index: 1,
+        name: 'Mitra', 
+        startTime: null,
+        endTime: null
+    },{
+        index: 2,
+        name: 'Rudra', 
+        startTime: null,
+        endTime: null
+    },{
+        index: 3,
+        name:  'Ahi', 
+        startTime: null,
+        endTime: null
+    },{
+        index: 4,
+        name:  'Pitala', 
+        startTime: null,
+        endTime: null
+    },{
+        index: 5,
+        name:  'Varaha', 
+        startTime: null,
+        endTime: null
+    },{
+        index: 6,
+        name:  'Vasu',
+        startTime: null,
+        endTime: null
+    },{
+        index: 7,
+        name:  'Vishvedeva',
+        startTime: null,
+        endTime: null
+    },{
+        index: 8,
+        name:  'Vidhi',
+        startTime: null,
+        endTime: null
+    },{
+        index: 9,
+        name:  'Puruhuta',
+        startTime: null,
+        endTime: null
+    },{
+        index: 10,
+        name:  'Saat Mukhi',
+        startTime: null,
+        endTime: null
+    },{
+        index: 11,
+        name:  'Vahini',
+        startTime: null,
+        endTime: null
+    },{
+        index: 12,
+        name:  'Varuna',
+        startTime: null,
+        endTime: null
+    },{
+        index: 13,
+        name:  'Naktankara', 
+        startTime: null,
+        endTime: null
+    },{
+        index: 14,
+        name: 'Aaryama', 
+        startTime: null,
+        endTime: null
+    },{
+        index: 15,
+        name: 'Girish', 
+        startTime: null,
+        endTime: null
+    },{
+        index: 16,
+        name: 'Bhaga', 
+        startTime: null,
+        endTime: null
+    },{
+        index: 17,
+        name: 'Ajapada', 
+        startTime: null,
+        endTime: null
+    },{
+        index: 18,
+        name: 'Budhnya', 
+        startTime: null,
+        endTime: null
+    },{
+        index: 19,
+        name: 'Ahir', 
+        startTime: null,
+        endTime: null
+    },{
+        index: 20,
+        name: 'Ashwini', 
+        startTime: null,
+        endTime: null
+    },{
+        index: 21,
+        name: 'Pushya', 
+        startTime: null,
+        endTime: null
+    },{
+        index: 22,
+        name: 'Yama', 
+        startTime: null,
+        endTime: null
+    },{
+        index: 23,
+        name: 'Vidhat', 
+        startTime: null,
+        endTime: null
+    },{
+        index: 24,
+        name: 'Agni', 
+        startTime: null,
+        endTime: null
+    },{
+        index: 25,
+        name: 'Aditi', 
+        startTime: null,
+        endTime: null
+    },{
+        index: 26,
+        name: 'Kanda', 
+        startTime: null,
+        endTime: null
+    },{
+        index: 27,
+        name: 'Vishnu', 
+        startTime: null,
+        endTime: null
+    },{
+        index: 28,
+        name: 'Yumigadyuti', 
+        startTime: null,
+        endTime: null
+    },{
+        index: 29,
+        name: 'Brahma', 
+        startTime: null,
+        endTime: null
+    },{
+        index: 30,
+        name: 'Samudram', 
+        startTime: null,
+        endTime: null
+    }
+]
 
 function onBillionMillionTrillionConvert(key = 'billion_million_trillion_converter_config') {
     const jsonData = converterConfig[key];
@@ -158,5 +311,79 @@ function onBMIConvert(key = 'bmi_config') {
         document.getElementById('bmiOutputType01').selectedIndex = 0;
     }
 }
+
+function currentLocation() {
+    if (navigator && navigator.geolocation) {
+        navigator.geolocation
+            .getCurrentPosition(function(position) {
+          console.log(`Latitude: ${position.coords.latitude}, Longitude: ${position.coords.longitude}`);
+          liveLocation = {
+                latitude: position.coords.latitude, 
+                longitude: position.coords.longitude
+            };
+        });
+    }
+}
+function weatherForecast(geo_position = null) {
+    if(!geo_position) {
+        console.log('No Live Location')
+        return;
+        // geo_position = {
+        //     latitude: Number(document.getElementById('latitude').value) || 22.5744,
+        //     longitude: Number(document.getElementById('longitude').value) || 88.3629
+        // }
+    }
+    
+
+    const api_url = `https://api.open-meteo.com/v1/forecast?latitude=${geo_position.latitude}&longitude=${geo_position.longitude}&hourly=cloud_cover,visibility,direct_radiation,uv_index,uv_index_clear_sky&daily=sunrise,sunset,sunshine_duration,precipitation_hours,precipitation_probability_max&timezone=auto&forecast_days=1&models=gfs_seamless`;
+
+    let req = new XMLHttpRequest();
+
+    req.open("GET", api_url);
+    req.onload = () => {
+        if (req.readyState === XMLHttpRequest.DONE) {
+            if (req.status === 200) {
+                resData = JSON.parse(req.response);
+                console.log(resData)
+                // SunRise SunSet Value:
+                // document.getElementById('latitude').value = geo_position.latitude;
+                // document.getElementById('longitude').value = geo_position.longitude;
+
+                document.getElementById("day-start-end-time").innerHTML = `The time of the creator: ${JSON.stringify(getMuhurta(resData.daily.sunrise))} <br> SunRise: ${resData.daily.sunrise} <br> SunSet: ${resData.daily.sunset}`;
+            } else {
+                console.log(`Request failed with status code ${req.status} from url ${req.responseURL}`);
+            }
+        }
+    };
+    req.onerror = error => {
+        console.log(`Request failed with error ${error.type}`);
+    };
+    req.send();
+}
+
+const minToHhrMin = ((val) => `${parseInt(val/60)}:${val%60}`);
+const paseTimeInMinutesFromDate = ((dt) => dt.getHours()*60+dt.getMinutes());
+const muhurtaSwitch = ((index) => index<=28 ? index%29-1 : index-31)
+
+function getMuhurta(time1) {
+    let dt = new Date(time1);
+
+    const muhurta = 48 // minutes;
+    const brahmaMuhurta = {... muhurutSeries.find(ele => {if(ele.name.toLowerCase() === 'brahma') return ele})};
+    brahmaMuhurta.startTime=  minToHhrMin(paseTimeInMinutesFromDate(dt) + muhurta*muhurtaSwitch(brahmaMuhurta.index)),
+    brahmaMuhurta.endTime= minToHhrMin(paseTimeInMinutesFromDate(dt) + muhurta*(muhurtaSwitch(brahmaMuhurta.index)+1)),
+    console.log('brahmaMuhurta: ', brahmaMuhurta);
+    delete brahmaMuhurta.index;
+    return brahmaMuhurta;
+}
+
+
+(function defaultTrigger() {
+    currentLocation();
+    setTimeout(() => {
+        console.log('location: ', liveLocation);
+        weatherForecast(liveLocation);
+    }, 1000)
+})()
 
 
