@@ -380,7 +380,7 @@ function getMuhurta(time1) {
         .forEach((ele, index) => {
         ele.startTime=  minToHhrMin((paseTimeInMinutesFromDate(dt) + muhurta*ele.index)%(24*60));
         ele.endTime= minToHhrMin((paseTimeInMinutesFromDate(dt) + muhurta*(ele.index+1))%(24*60));
-        res += `<span style="float:left;">${index+1}: ${ele.name} Muhurta: ${ele.startTime} - ${ele.endTime} (${muhurta} Min)</span><br>`;
+        res += `<span style="float:left;">${index+1}: ${ele.name} Muhurta: ${ele.startTime} - ${ele.endTime} (${muhurta}M)</span><br>`;
     })
     return res;
 }
