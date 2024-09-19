@@ -329,7 +329,8 @@ function currentLocation() {
 function weatherForecast(geo_position = liveLocation) {
     if(isRenderMuhurata) return;
     if(!geo_position) {
-        alert('No Live Location. Please enable your location');
+        if(isRenderMuhurata) alert('No Live Location. Please enable your location');
+        console.log('No Live Location. Please enable your location');
         isRenderMuhurata = false;
         return;
         // geo_position = {
