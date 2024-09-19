@@ -348,14 +348,16 @@ function weatherForecast(geo_position = liveLocation) {
         if (req.readyState === XMLHttpRequest.DONE) {
             isRenderMuhurata = true;
             if (req.status === 200) {
-                resData = JSON.parse(req.response);
-                // console.log(resData)
+                data = JSON.parse(req.response);
+                // console.log(data)
                 // SunRise SunSet Value:
                 // document.getElementById('latitude').value = geo_position.latitude;
                 // document.getElementById('longitude').value = geo_position.longitude;
 
-                document.getElementById("day-start-end-time").innerHTML = `SunRise: ${resData.daily.sunrise} <br> SunSet: ${resData.daily.sunset}
-                                <br><br> ${getMuhurta(resData.daily.sunrise)} `;
+                document.getElementById("day-start-end-time").innerHTML = `
+                            Timezone: ${data.timezone} (Lati: ${data.latitude} Long: ${data.longitude})<br>
+                            SunRise: ${data.daily.sunrise} <br> SunSet: ${data.daily.sunset}
+                            <br><br> ${getMuhurta(data.daily.sunrise)} `;
             } else {
                 console.log(`Request failed with status code ${req.status} from url ${req.responseURL}`);
             }
@@ -380,7 +382,7 @@ function getMuhurta(time1) {
         .forEach((ele, index) => {
         ele.startTime=  minToHhrMin((paseTimeInMinutesFromDate(dt) + muhurta*ele.index)%(24*60));
         ele.endTime= minToHhrMin((paseTimeInMinutesFromDate(dt) + muhurta*(ele.index+1))%(24*60));
-        res += `<span style="float:left;">${index+1}: ${ele.name}: ${ele.startTime} - ${ele.endTime} (${muhurta}M)</span><br>`;
+        res += `<span style="float:left;">${String(index+1).padStart(2, '0')}. ${ele.name}: ${ele.startTime} - ${ele.endTime} (${muhurta}M)</span><br>`;
     })
     return res;
 }
