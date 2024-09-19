@@ -1,5 +1,5 @@
 .container {
-    width: 60%;
+    width: 100%;
 }
 
 table, th, td {
@@ -18,9 +18,9 @@ mark {
 
 /* Converter CSS */
 .converter {
-    border: 5px solid gray;
-    padding: 20px;
-    margin: 10px;
+    border: 2px solid gray;
+    padding: 5%;
+    margin: 5%;
     text-align: center;
 }
 p.uppercase {
