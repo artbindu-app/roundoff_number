@@ -39,6 +39,8 @@
     <!-- <script src="index.js"></script> -->
     <script>
         let getAllData = {};
+        const getReleaseURL = (version) => version ? `https://nodejs.org/download/release/v${version}/` : '';
+        const getTitle = (version) => getAllData.filter(ele => ele.version === `v${version}`)[0].lts;
         function shoeCombinedData(arr1, arr2) {
             if (arr1.length < arr2.length) {
                 let _temp = arr1; arr1 = arr2; arr2 = _temp;
@@ -51,8 +53,16 @@
                     </tr>`
             for (let i = 0; i < arr2.length; i++) {
                 st += `<tr>
-                            <th>${arr1[i]}</th>
-                            <th>${arr2[i] ? arr2[i] : ''}</th>
+                            <th>
+                                <a href="${getReleaseURL(arr1[i])}" target="blank" title="Old Version">
+                                    ${arr1[i]}
+                                </a>
+                            </th>
+                            <th> ${getTitle(arr2[i] ? arr2[i] : '')} : 
+                                <a href="${getReleaseURL(arr2[i] ? arr2[i] : '')}" target="blank" title="LTS">
+                                    ${arr2[i] ? arr2[i] : ''}
+                                </a>
+                            </th>
                         </tr>`;
             }
             st += `</table>`
@@ -68,6 +78,7 @@
                 if (req.readyState === XMLHttpRequest.DONE) {
                     if (req.status === 200) {
                         getAllData = JSON.parse(req.response);
+                        debugger;
 
                         const currentNodeVersions = getAllData.filter(x => !(x.lts === false)).map(x => x = x.version.replace(/v/gi, ''));
                         const ltsNodeVersion = getAllData.filter(x => (x.lts === false)).map(x => x = x.version.replace(/v/gi, ''));
