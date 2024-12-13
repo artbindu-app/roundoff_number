@@ -41,6 +41,7 @@
         let getAllData = {};
         const getReleaseURL = (version) => version ? `https://nodejs.org/download/release/v${version}/` : '';
         const getTitle = (version) => getAllData.filter(ele => ele.version === `v${version}`)[0].lts;
+        const getReleaseInfo = (version) => version ? `https://github.com/nodejs/node/releases/tag/v${version}/` : '';
         function shoeCombinedData(arr1, arr2) {
             if (arr1.length < arr2.length) {
                 let _temp = arr1; arr1 = arr2; arr2 = _temp;
@@ -52,15 +53,23 @@
                         <th>LTS Version</th>
                     </tr>`
             for (let i = 0; i < arr2.length; i++) {
+                const currentVersion = arr1[i];
+                const ltsVersion = arr2[i] ? arr2[i] : '';
                 st += `<tr>
                             <th>
-                                <a href="${getReleaseURL(arr1[i])}" target="blank" title="Old Version">
-                                    ${arr1[i]}
+                                <a href="${getReleaseInfo(currentVersion)}" target="blank" title="View Release Note">
+                                    Release Note
+                                </a> :
+                                <a href="${getReleaseURL(currentVersion)}" target="blank" title="Current Version">
+                                    ${currentVersion}
                                 </a>
                             </th>
-                            <th> ${getTitle(arr2[i] ? arr2[i] : '')} : 
-                                <a href="${getReleaseURL(arr2[i] ? arr2[i] : '')}" target="blank" title="LTS">
-                                    ${arr2[i] ? arr2[i] : ''}
+                            <th> 
+                                <a href="${getReleaseInfo(ltsVersion)}" target="blank" title="View Release Note">
+                                    ${getTitle(ltsVersion)}
+                                </a> : 
+                                <a href="${getReleaseURL(ltsVersion)}" target="blank" title="LTS">
+                                    ${ltsVersion}
                                 </a>
                             </th>
                         </tr>`;
