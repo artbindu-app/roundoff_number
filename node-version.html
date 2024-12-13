@@ -78,7 +78,6 @@
                 if (req.readyState === XMLHttpRequest.DONE) {
                     if (req.status === 200) {
                         getAllData = JSON.parse(req.response);
-                        debugger;
 
                         const currentNodeVersions = getAllData.filter(x => !(x.lts === false)).map(x => x = x.version.replace(/v/gi, ''));
                         const ltsNodeVersion = getAllData.filter(x => (x.lts === false)).map(x => x = x.version.replace(/v/gi, ''));
