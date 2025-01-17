@@ -62,7 +62,7 @@
                                 </a> :
                                 <a href="${getReleaseURL(currentVersion)}" target="blank" title="Current Version">
                                     ${currentVersion}
-                                </a>
+                                </a> (${getDate(currentVersion)})
                             </th>
                             <th> 
                                 <a href="${getReleaseInfo(ltsVersion)}" target="blank" title="View Release Note">
@@ -70,12 +70,16 @@
                                 </a> : 
                                 <a href="${getReleaseURL(ltsVersion)}" target="blank" title="LTS">
                                     ${ltsVersion}
-                                </a>
+                                </a> (${getDate(ltsVersion)})
                             </th>
                         </tr>`;
             }
             st += `</table>`
             document.getElementById("output").innerHTML = st;
+        }
+
+        function getDate(version) {
+            return getAllData.filter(x => (x.version.includes(version.toString())))[0].date;
         }
 
         function getRequestCall() {
