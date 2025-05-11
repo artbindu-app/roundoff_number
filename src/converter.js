@@ -215,6 +215,49 @@ const muhurutSeries = [
     }
 ]
 
+function woodCalculator() {
+    const isRound = document.getElementById('woodIsRound').value;
+    if(isRound === 'true') {
+        document.getElementById("woodChoosedItem").innerHTML = `Circumference: 
+            <input type="number" id="Circumference" value="" placeholder="inches" name="Circumference"> 
+            Length:
+            <input type="number" id="Length"        value="" placeholder="inches" name="Length"> 
+            <button type="button" onclick="getWoodData()">GetData</button><br>
+            <output id="wood-output" style="font-size: 200%;"></output>
+        `;
+    } else {
+        document.getElementById("woodChoosedItem").innerHTML = `Length: 
+            <input type="number" id="Length" value="" placeholder="inches" name="Length"> 
+            Breath: 
+            <input type="number" id="Breath" value="" placeholder="inches" name="Breath"> 
+            Height:  
+            <input type="number" id="Height" value="" placeholder="inches" name="Height"> 
+            <button type="button" onclick="getWoodData()">GetData</button><br>
+            <output id="wood-output" style="font-size: 200%;"></output>
+        `;
+    }
+}
+function getWoodData() {
+    const isRound = document.getElementById('woodIsRound').value;
+    let res = null;
+    let side = null;
+    if(isRound === 'true') {
+        let cir = document.getElementById("Circumference").value;
+        let len = document.getElementById("Length").value;
+        if(cir && len) {
+            side = cir/(Math.PI * Math.sqrt(2));
+            res = (side * side * len) / (12*12*12);
+            side = side.toFixed(1);
+        } else res = '';
+    } else {
+        let len = document.getElementById("Length").value;
+        let bre = document.getElementById("Breath").value;
+        let hei = document.getElementById("Height").value;
+        res = (len && bre && hei) ? ((len * bre * hei) / (12*12*12)) : '';
+    }
+    document.getElementById("wood-output").value = (isRound ? `Side: ${side} X ${side}    ` : '') + `CFT = ${res ? res.toFixed(1) : ''}`;
+}
+
 function onBillionMillionTrillionConvert(key = 'billion_million_trillion_converter_config') {
     const jsonData = converterConfig[key];
     const wVal = {

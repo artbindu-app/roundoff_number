@@ -26,6 +26,27 @@
                 </h1>
             </div>
             <div class="card-body converter">
+                <h4 style="padding-bottom: 25px;">Wood Calculator ("KB" likely refers to "Cubic Feet" (CFT))</h4> 
+                <div>
+                    <form class="form-inline" action=""> 
+                        <div>
+                            <select name="woodIsRound" id="woodIsRound" onchange="woodCalculator()">
+                                <option value="true" selected>Round</option>
+                                <option value="false">Block</option>
+                            </select>
+                            <div id="woodChoosedItem">
+                                Circumference: 
+                                <input type="number" id="Circumference" value="" placeholder="inches" name="Circumference"> 
+                                Length:
+                                <input type="number" id="Length"        value="" placeholder="inches" name="Length"> 
+                                <button type="button" onclick="getWoodData()">GetData</button><br>
+                                <output id="wood-output" style="font-size: 200%;"></output>
+                            </div>
+                        </div>
+                    </form> 
+                </div>
+            </div>
+            <div class="card-body converter">
                 <h4 style="padding-bottom: 25px;">Billion, Million, Trillion Converter</h4> 
                 <div>
                     <form class="form-inline" action=""> 
