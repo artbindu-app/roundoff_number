@@ -42,6 +42,8 @@
         const getReleaseURL = (version) => version ? `https://nodejs.org/download/release/v${version}/` : '';
         const getTitle = (version) => getAllData.filter(ele => ele.version === `v${version}`)[0].lts;
         const getReleaseInfo = (version) => version ? `https://github.com/nodejs/node/releases/tag/v${version}/` : '';
+        const getDate = (version) => getAllData.filter(x => (x.version.includes(`v${version}`)))[0]?.date;
+
         function shoeCombinedData(arr1, arr2) {
             if (arr1.length < arr2.length) {
                 let _temp = arr1; arr1 = arr2; arr2 = _temp;
@@ -78,10 +80,6 @@
             document.getElementById("output").innerHTML = st;
         }
 
-        function getDate(version) {
-            return getAllData.filter(x => (x.version.includes(`v${version}`)))[0].date;
-        }
-
         function getRequestCall() {
             const api_url = 'https://nodejs.org/dist/index.json';
             let req = new XMLHttpRequest();
@@ -109,14 +107,6 @@
                 console.log(`Request failed with error ${error.type}`);
             };
             req.send();
-        }
-
-        function getVersion(_version) {
-            return getAllData.filter(x => x.version === _version);
-        }
-
-        function showVersionDetails(_version) {
-            const _data = getVersion(_version);
         }
 
         getRequestCall();
