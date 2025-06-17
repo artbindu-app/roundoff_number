@@ -79,7 +79,7 @@
         }
 
         function getDate(version) {
-            return getAllData.filter(x => (x.version.includes(version.toString())))[0].date;
+            return getAllData.filter(x => (x.version.includes(`v${version}`)))[0].date;
         }
 
         function getRequestCall() {
