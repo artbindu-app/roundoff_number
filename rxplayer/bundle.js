@@ -65007,7 +65007,7 @@ var App = /*#__PURE__*/function () {
       this.stream = localManifest ? localManifest : selectedStreamInfo ? selectedStreamInfo : this.stream;
       var localManifest = localStorage.getItem('manifestURL');
       this.stream.manifestURL = localManifest || this.stream.manifestURL;
-      this.logger.info("Loading stream info: ".concat(JSON.stringify(this.stream)));
+      this.logger.info("BM: Loading stream info: ".concat(JSON.stringify(this.stream)));
 
       // Player related config
       this.manifestUrl = this.stream.manifestURL;
