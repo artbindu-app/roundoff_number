@@ -64387,7 +64387,7 @@ var RxMediaPlayer = /*#__PURE__*/function () {
   }, {
     key: "handlePlayerStateChange",
     value: function handlePlayerStateChange(state) {
-      this.logger.warn('Player State: ' + state);
+      this.logger.warn('Player State: ' + state + '  --  ' + this.player.getPosition());
       this.dispatchEvent(new CustomEvent(this.uiEvents.CURRENT_STATE, {
         detail: state
       }));
@@ -64648,14 +64648,14 @@ var RxMediaPlayer = /*#__PURE__*/function () {
   }, {
     key: "play",
     value: function play() {
-      if (this.player) {
+      if (this.player && this.player.isPaused()) {
         this.player.play();
       }
     }
   }, {
     key: "pause",
     value: function pause() {
-      if (this.player) {
+      if (this.player && !this.player.isPaused()) {
         this.player.pause();
       }
     }
@@ -64882,6 +64882,379 @@ var RxMediaPlayer = /*#__PURE__*/function () {
 
 /***/ }),
 
+/***/ "./src/utils/keyboardControls.js":
+/*!***************************************!*\
+  !*** ./src/utils/keyboardControls.js ***!
+  \***************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _logger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./logger */ "./src/utils/logger.js");
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function _classCallCheck(a, n) { if (!(a instanceof n)) throw new TypeError("Cannot call a class as a function"); }
+function _defineProperties(e, r) { for (var t = 0; t < r.length; t++) { var o = r[t]; o.enumerable = o.enumerable || !1, o.configurable = !0, "value" in o && (o.writable = !0), Object.defineProperty(e, _toPropertyKey(o.key), o); } }
+function _createClass(e, r, t) { return r && _defineProperties(e.prototype, r), t && _defineProperties(e, t), Object.defineProperty(e, "prototype", { writable: !1 }), e; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+
+var KeyboardControls = /*#__PURE__*/function () {
+  function KeyboardControls(player, uiButtons) {
+    var loggerTag = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 'KeyboardControls';
+    _classCallCheck(this, KeyboardControls);
+    this.player = player;
+    this.uiButtons = uiButtons;
+    this.logger = new _logger__WEBPACK_IMPORTED_MODULE_0__["default"](loggerTag);
+    this.keyEventsBound = false;
+  }
+  return _createClass(KeyboardControls, [{
+    key: "bindKeyPressEvent",
+    value: function bindKeyPressEvent() {
+      var _this = this;
+      // Prevent multiple keyboard event bindings
+      if (this.keyEventsBound) {
+        return;
+      }
+      this.keyEventsBound = true;
+
+      // Keyboard event handler
+      this.handleKeyPress = function (event) {
+        // Prevent default behavior for media keys
+        if (_this.isMediaKey(event)) {
+          event.preventDefault();
+        }
+        var key = event.key.toLowerCase();
+        var code = event.code.toLowerCase();
+        switch (key) {
+          case ' ': // Spacebar
+          case 'k':
+            // YouTube-style play/pause
+            _this.togglePlayPause();
+            break;
+          case 'arrowleft':
+          case 'j':
+            // YouTube-style rewind
+            _this.rewind();
+            break;
+          case 'arrowright':
+          case 'l':
+            // YouTube-style fast forward
+            _this.fastForward();
+            break;
+          case 'arrowup':
+            _this.volumeUp();
+            break;
+          case 'arrowdown':
+            _this.volumeDown();
+            break;
+          case 'm':
+            _this.toggleMute();
+            break;
+          case 'r':
+            _this.resetPlayback();
+            break;
+          case 's':
+            _this.stopPlayback();
+            break;
+          case 'f':
+            _this.toggleFullscreen();
+            break;
+          case 'escape':
+            _this.exitFullscreen();
+            break;
+          case '0':
+          case '1':
+          case '2':
+          case '3':
+          case '4':
+          case '5':
+          case '6':
+          case '7':
+          case '8':
+          case '9':
+            _this.seekToPercentage(parseInt(key) * 10);
+            break;
+          default:
+            // Handle remote control button codes
+            _this.handleRemoteButton(event);
+            break;
+        }
+      };
+
+      // Add event listeners for keyboard events - Only keydown to prevent double triggering
+      document.addEventListener('keydown', this.handleKeyPress);
+
+      // Add event listeners for remote control events (custom events)
+      document.addEventListener('remotebuttonpress', this.handleRemoteButton.bind(this));
+      document.addEventListener('remotebuttondown', this.handleRemoteButton.bind(this));
+      document.addEventListener('remotebuttonup', this.handleRemoteButton.bind(this));
+      this.logger.info('Keyboard and remote control events bound');
+    }
+  }, {
+    key: "isMediaKey",
+    value: function isMediaKey(event) {
+      // Check if the pressed key is a media key
+      var mediaKeys = ['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown', ' ', 'Space', 'Enter', 'Escape', 'F', 'M', 'R', 'S'];
+      return mediaKeys.includes(event.key) || mediaKeys.includes(event.code);
+    }
+  }, {
+    key: "handleRemoteButton",
+    value: function handleRemoteButton(event) {
+      // Handle remote control button presses
+      var button = event.detail ? event.detail.button : event.button;
+      switch (button) {
+        case 'play':
+        case 'pause':
+        case 'play_pause':
+          this.togglePlayPause();
+          break;
+        case 'stop':
+          this.stopPlayback();
+          break;
+        case 'rewind':
+        case 'skip_backward':
+          this.rewind();
+          break;
+        case 'fast_forward':
+        case 'skip_forward':
+          this.fastForward();
+          break;
+        case 'volume_up':
+          this.volumeUp();
+          break;
+        case 'volume_down':
+          this.volumeDown();
+          break;
+        case 'mute':
+          this.toggleMute();
+          break;
+        case 'home':
+        case 'menu':
+          this.showMenu();
+          break;
+        case 'back':
+          this.goBack();
+          break;
+        case 'ok':
+        case 'select':
+          this.selectCurrent();
+          break;
+        case 'up':
+          this.navigateUp();
+          break;
+        case 'down':
+          this.navigateDown();
+          break;
+        case 'left':
+          this.navigateLeft();
+          break;
+        case 'right':
+          this.navigateRight();
+          break;
+        case 'red':
+        case 'green':
+        case 'yellow':
+        case 'blue':
+          this.handleColorButton(button);
+          break;
+        case 'power':
+          this.powerOff();
+          break;
+        default:
+          this.logger.info("Unhandled remote button: ".concat(button));
+          break;
+      }
+    }
+  }, {
+    key: "volumeUp",
+    value: function volumeUp() {
+      var currentVolume = parseFloat(this.uiButtons.VOLUME_BAR.value);
+      var newVolume = Math.min(1, currentVolume + 0.1);
+      this.uiButtons.VOLUME_BAR.value = newVolume;
+      this.changeVolume();
+    }
+  }, {
+    key: "volumeDown",
+    value: function volumeDown() {
+      var currentVolume = parseFloat(this.uiButtons.VOLUME_BAR.value);
+      var newVolume = Math.max(0, currentVolume - 0.1);
+      this.uiButtons.VOLUME_BAR.value = newVolume;
+      this.changeVolume();
+    }
+  }, {
+    key: "toggleFullscreen",
+    value: function toggleFullscreen() {
+      var _this2 = this;
+      if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen()["catch"](function (err) {
+          _this2.logger.error('Error attempting to enable fullscreen:', err);
+        });
+      } else {
+        document.exitFullscreen();
+      }
+    }
+  }, {
+    key: "exitFullscreen",
+    value: function exitFullscreen() {
+      if (document.fullscreenElement) {
+        document.exitFullscreen();
+      }
+    }
+  }, {
+    key: "seekToPercentage",
+    value: function seekToPercentage(percentage) {
+      var duration = this.player.duration();
+      if (duration > 0) {
+        var seekTime = percentage / 100 * duration;
+        this.player.seek(seekTime);
+        this.logger.info("Seeked to ".concat(percentage, "% (").concat(this.formatTime(seekTime), ")"));
+      }
+    }
+  }, {
+    key: "showMenu",
+    value: function showMenu() {
+      // Implementation for showing menu
+      this.logger.info('Menu button pressed');
+    }
+  }, {
+    key: "goBack",
+    value: function goBack() {
+      // Implementation for going back
+      this.logger.info('Back button pressed');
+    }
+  }, {
+    key: "selectCurrent",
+    value: function selectCurrent() {
+      // Implementation for selecting current item
+      this.logger.info('Select button pressed');
+    }
+  }, {
+    key: "navigateUp",
+    value: function navigateUp() {
+      // Implementation for navigation
+      this.logger.info('Up navigation');
+    }
+  }, {
+    key: "navigateDown",
+    value: function navigateDown() {
+      // Implementation for navigation
+      this.logger.info('Down navigation');
+    }
+  }, {
+    key: "navigateLeft",
+    value: function navigateLeft() {
+      // Implementation for navigation
+      this.logger.info('Left navigation');
+    }
+  }, {
+    key: "navigateRight",
+    value: function navigateRight() {
+      // Implementation for navigation
+      this.logger.info('Right navigation');
+    }
+  }, {
+    key: "handleColorButton",
+    value: function handleColorButton(color) {
+      // Implementation for color buttons (common on remotes)
+      this.logger.info("Color button pressed: ".concat(color));
+    }
+  }, {
+    key: "powerOff",
+    value: function powerOff() {
+      // Implementation for power off
+      this.logger.info('Power button pressed');
+    }
+  }, {
+    key: "togglePlayPause",
+    value: function togglePlayPause() {
+      this.player.isPaused() ? this.player.play() : this.player.pause();
+      this.updateButtonStates('PLAYPAUSE');
+    }
+  }, {
+    key: "changeVolume",
+    value: function changeVolume() {
+      this.player.setVolume(parseFloat(this.uiButtons.VOLUME_BAR.value));
+      this.updateButtonStates('VOLUME');
+    }
+  }, {
+    key: "toggleMute",
+    value: function toggleMute() {
+      this.player.isMute() ? this.player.unmute() : this.player.mute();
+      this.updateButtonStates('VOLUME');
+    }
+  }, {
+    key: "resetPlayback",
+    value: function resetPlayback() {
+      this.player.seek(0);
+      this.uiButtons.VIDEO_SEEKBAR.value = 0;
+      // Reset CSS variable for progress fill
+      this.uiButtons.VIDEO_SEEKBAR.style.setProperty('--progress', '0%');
+      this.player.play();
+      this.updateButtonStates('PLAYPAUSE');
+    }
+  }, {
+    key: "rewind",
+    value: function rewind() {
+      var currentTime = this.player.position();
+      this.player.seek(Math.max(0, currentTime - 10));
+    }
+  }, {
+    key: "fastForward",
+    value: function fastForward() {
+      var currentTime = this.player.position();
+      var duration = this.player.duration();
+      this.player.seek(Math.min(duration, currentTime + 10));
+    }
+  }, {
+    key: "stopPlayback",
+    value: function stopPlayback() {
+      this.player.stop();
+      this.updateButtonStates('PLAYPAUSE');
+    }
+  }, {
+    key: "updateButtonStates",
+    value: function updateButtonStates(buttonType) {
+      switch (buttonType) {
+        case 'PLAYPAUSE':
+          this.uiButtons.PLAYPAUSE_BTN.querySelector('i').classList.remove(this.player.isPaused() ? 'fa-pause' : 'fa-play');
+          this.uiButtons.PLAYPAUSE_BTN.querySelector('i').classList.add(this.player.isPaused() ? 'fa-play' : 'fa-pause');
+          break;
+        case 'VOLUME':
+          this.uiButtons.VOLUME_BTN.querySelector('i').classList.remove(this.player.isMute() ? 'fa-volume-up' : 'fa-volume-mute');
+          this.uiButtons.VOLUME_BTN.querySelector('i').classList.add(this.player.isMute() ? 'fa-volume-mute' : 'fa-volume-up');
+          break;
+        default:
+          break;
+      }
+    }
+  }, {
+    key: "formatTime",
+    value: function formatTime(seconds) {
+      var hrs = Math.floor(seconds / 3600);
+      var mins = Math.floor(seconds % 3600 / 60);
+      var secs = Math.floor(seconds % 60);
+      return [hrs, mins, secs].map(function (v) {
+        return v < 10 ? '0' + v : v;
+      }).join(':');
+    }
+  }, {
+    key: "destroy",
+    value: function destroy() {
+      // Remove event listeners
+      if (this.handleKeyPress) {
+        document.removeEventListener('keydown', this.handleKeyPress);
+      }
+      document.removeEventListener('remotebuttonpress', this.handleRemoteButton.bind(this));
+      document.removeEventListener('remotebuttondown', this.handleRemoteButton.bind(this));
+      document.removeEventListener('remotebuttonup', this.handleRemoteButton.bind(this));
+      this.keyEventsBound = false;
+    }
+  }]);
+}();
+/* harmony default export */ __webpack_exports__["default"] = (KeyboardControls);
+
+/***/ }),
+
 /***/ "./src/utils/logger.js":
 /*!*****************************!*\
   !*** ./src/utils/logger.js ***!
@@ -64990,12 +65363,14 @@ Logger.levelKey = {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _const_appConfig__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../const/appConfig */ "./src/const/appConfig.js");
+/* harmony import */ var _keyboardControls__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./keyboardControls */ "./src/utils/keyboardControls.js");
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 function _classCallCheck(a, n) { if (!(a instanceof n)) throw new TypeError("Cannot call a class as a function"); }
 function _defineProperties(e, r) { for (var t = 0; t < r.length; t++) { var o = r[t]; o.enumerable = o.enumerable || !1, o.configurable = !0, "value" in o && (o.writable = !0), Object.defineProperty(e, _toPropertyKey(o.key), o); } }
 function _createClass(e, r, t) { return r && _defineProperties(e.prototype, r), t && _defineProperties(e, t), Object.defineProperty(e, "prototype", { writable: !1 }), e; }
 function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
 function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+
 
 var Utils = /*#__PURE__*/function () {
   function Utils() {
@@ -65023,6 +65398,12 @@ var Utils = /*#__PURE__*/function () {
         VIDEO_RESOLUTION_LIST: htmlDom.getElementById(_const_appConfig__WEBPACK_IMPORTED_MODULE_0__["default"].quality.VIDEO_QUALITY_LIST),
         AUDIO_RESOLUTION_LIST: htmlDom.getElementById(_const_appConfig__WEBPACK_IMPORTED_MODULE_0__["default"].quality.AUDIO_QUALITY_LIST)
       };
+    }
+  }, {
+    key: "createKeyboardControls",
+    value: function createKeyboardControls(player, uiButtons) {
+      var loggerTag = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 'KeyboardControls';
+      return new _keyboardControls__WEBPACK_IMPORTED_MODULE_1__["default"](player, uiButtons, loggerTag);
     }
   }, {
     key: "formatTime",
@@ -65199,6 +65580,7 @@ var App = /*#__PURE__*/function () {
     this.tag = "App";
     this.logger = new _utils_logger__WEBPACK_IMPORTED_MODULE_6__["default"](this.tag);
     this.assetSelect = document.getElementById('asset-select');
+    this.eventsBound = false; // Flag to prevent multiple event bindings
     this.populateAssetSelect();
     this.loadSelectedStream(_config_assetInfo__WEBPACK_IMPORTED_MODULE_1__["default"].dash[0]);
   }
@@ -65221,7 +65603,12 @@ var App = /*#__PURE__*/function () {
       // Load the player
       this.myPlayer.initialize();
       this.myPlayer.load();
+
+      // Bind UI events
       this.bindEvents();
+      // Bind KeyPress Events using Utils
+      this.keyboardControls = _utils_utils__WEBPACK_IMPORTED_MODULE_3__["default"].createKeyboardControls(this.myPlayer, this.uiButtons, this.tag);
+      this.keyboardControls.bindKeyPressEvent();
     }
   }, {
     key: "updatePlayerInfo",
@@ -65252,6 +65639,12 @@ var App = /*#__PURE__*/function () {
     key: "bindEvents",
     value: function bindEvents() {
       var _this2 = this;
+      // Prevent multiple event bindings
+      if (this.eventsBound) {
+        return;
+      }
+      this.eventsBound = true;
+
       // Player Controls Buttons
       this.uiButtons.RESTART_BTN.addEventListener('click', function () {
         return _this2.resetPlayback();
@@ -65331,6 +65724,10 @@ var App = /*#__PURE__*/function () {
     value: function destroy() {
       if (this.player) {
         this.player.destroy();
+      }
+      // Clean up keyboard controls
+      if (this.keyboardControls) {
+        this.keyboardControls.destroy();
       }
     }
   }, {
@@ -65570,6 +65967,8 @@ var App = /*#__PURE__*/function () {
         this.player.stop();
         this.destroy();
       }
+      // Reset the events bound flags when switching assets
+      this.eventsBound = false;
       setTimeout(function () {
         _this3.loadSelectedStream();
       }, 2000);
