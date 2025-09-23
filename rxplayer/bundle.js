@@ -1,4 +1,5 @@
 /******/ (function() { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./config/assetInfo.js":
@@ -7,7 +8,6 @@
   \*****************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 var mediaInfo = {
   "dash": [{
@@ -100,7 +100,6 @@ var mediaInfo = {
   \***********************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
@@ -113,7 +112,6 @@ __webpack_require__.r(__webpack_exports__);
   \*********************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ addClassName; }
@@ -164,7 +162,6 @@ function addClassName(elt, className) {
   \*********************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ addTextTrack; }
@@ -228,7 +225,6 @@ function addTextTrack(mediaElement) {
   \**********************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   MediaSource_: function() { return /* binding */ MediaSource_; },
@@ -288,7 +284,6 @@ const READY_STATES = {
   \************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   isA1KStb40xx: function() { return /* binding */ isA1KStb40xx; },
@@ -459,7 +454,6 @@ let isA1KStb40xx = false;
   \**********************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   getFirefoxVersion: function() { return /* binding */ getFirefoxVersion; }
@@ -517,7 +511,6 @@ function getFirefoxVersion() {
   \************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ canPatchISOBMFFSegment; }
@@ -561,7 +554,6 @@ function canPatchISOBMFFSegment() {
   \**************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   canRelyOnRequestMediaKeySystemAccess: function() { return /* binding */ canRelyOnRequestMediaKeySystemAccess; }
@@ -617,7 +609,6 @@ function canRelyOnRequestMediaKeySystemAccess(keySystem) {
   \********************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ canRelyOnVideoVisibilityAndSize; }
@@ -683,7 +674,6 @@ function canRelyOnVideoVisibilityAndSize() {
   \***************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ canReuseMediaKeys; }
@@ -721,7 +711,6 @@ function canReuseMediaKeys() {
   \**********************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _browser_detection__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./browser_detection */ "./node_modules/rx-player/dist/es2017/compat/browser_detection.js");
 
@@ -742,7 +731,6 @@ const canSeekDirectlyAfterLoadedMetadata = !_browser_detection__WEBPACK_IMPORTED
   \********************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ tryToChangeSourceBufferType; }
@@ -795,7 +783,6 @@ function tryToChangeSourceBufferType(sourceBuffer, codec) {
   \************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ clearElementSrc; }
@@ -865,7 +852,6 @@ function clearElementSrc(element) {
   \************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ closeSession; }
@@ -985,7 +971,6 @@ function closeSession(session) {
   \********************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   PSSH_TO_INTEGER: function() { return /* binding */ PSSH_TO_INTEGER; }
@@ -1021,7 +1006,6 @@ const PSSH_TO_INTEGER = (0,_utils_byte_parsing__WEBPACK_IMPORTED_MODULE_0__.be4t
   \***********************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ CustomMediaKeySystemAccess; }
@@ -1076,7 +1060,6 @@ class CustomMediaKeySystemAccess {
   \********************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   MSMediaKeysConstructor: function() { return /* reexport safe */ _ms_media_keys_constructor__WEBPACK_IMPORTED_MODULE_5__.MSMediaKeysConstructor; },
@@ -1247,7 +1230,6 @@ function getIE11MediaKeysCallbacks() {
   \*******************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   MozMediaKeysConstructor: function() { return /* binding */ MozMediaKeysConstructor; },
@@ -1323,7 +1305,6 @@ function getMozMediaKeysCallbacks() {
   \******************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   MSMediaKeysConstructor: function() { return /* binding */ MSMediaKeysConstructor; }
@@ -1365,7 +1346,6 @@ if (MSMediaKeys !== undefined &&
   \**************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ getOldWebKitMediaKeysCallbacks; },
@@ -1552,7 +1532,6 @@ function getOldWebKitMediaKeysCallbacks() {
   \**********************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ getWebKitMediaKeysCallbacks; }
@@ -1782,7 +1761,6 @@ function getWebKitMediaKeysCallbacks() {
   \**********************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   WebKitMediaKeysConstructor: function() { return /* binding */ WebKitMediaKeysConstructor; }
@@ -1824,7 +1802,6 @@ if (WebKitMediaKeys !== undefined &&
   \*********************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _errors__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../errors */ "./node_modules/rx-player/dist/es2017/errors/media_error.js");
 /* harmony import */ var _utils_assert__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../utils/assert */ "./node_modules/rx-player/dist/es2017/utils/assert.js");
@@ -2064,7 +2041,6 @@ function defaultSetMediaKeys(elt, mediaKeys) {
   \*******************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ generateKeyRequest; },
@@ -2228,7 +2204,6 @@ function generateKeyRequest(session, initializationDataType, initializationData)
   \************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ getInitData; }
@@ -2359,7 +2334,6 @@ function getInitData(encryptedEvent) {
   \******************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ getUUIDKIDFromKeyStatusKID; }
@@ -2406,7 +2380,6 @@ function getUUIDKIDFromKeyStatusKID(keySystem, baseKeyId) {
   \***************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ getWebKitFairPlayInitData; }
@@ -2479,7 +2452,6 @@ function getWebKitFairPlayInitData(initDataBytes, serverCertificateBytes) {
   \****************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   closeSession: function() { return /* reexport safe */ _close_session__WEBPACK_IMPORTED_MODULE_0__["default"]; },
@@ -2524,7 +2496,6 @@ __webpack_require__.r(__webpack_exports__);
   \***********************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ loadSession; }
@@ -2593,7 +2564,6 @@ async function loadSession(session, sessionId) {
   \*************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   setMediaKeys: function() { return /* binding */ setMediaKeys; }
@@ -2644,7 +2614,6 @@ function setMediaKeys(emeImplementation, mediaElement, mediaKeys) {
   \*************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ enableAudioTrack; }
@@ -2686,7 +2655,6 @@ function enableAudioTrack(audioTracks, indexToEnable) {
   \**********************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   addEventListener: function() { return /* binding */ addEventListener; },
@@ -3138,7 +3106,6 @@ function addEventListener(elt, evt, listener, stopListening) {
   \*************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   DUMMY_PLAY_READY_HEADER: function() { return /* binding */ DUMMY_PLAY_READY_HEADER; },
@@ -3212,7 +3179,6 @@ function generateInitData(data, systemId) {
   \*********************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ getStartDate; }
@@ -3271,7 +3237,6 @@ function getStartDate(mediaElement) {
   \*************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ hasIssuesWithHighMediaSourceDuration; }
@@ -3313,7 +3278,6 @@ function hasIssuesWithHighMediaSourceDuration() {
   \************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 const hasMseInWorker = typeof MediaSource === "function" &&
     // eslint-disable-next-line
@@ -3329,7 +3293,6 @@ const hasMseInWorker = typeof MediaSource === "function" &&
   \*********************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ hasWorkerApi; }
@@ -3359,7 +3322,6 @@ function hasWorkerApi() {
   \*************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ isCodecSupported; }
@@ -3439,7 +3401,6 @@ function isCodecSupported(mimeType) {
   \****************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ isDebugModeEnabled; }
@@ -3463,7 +3424,6 @@ function isDebugModeEnabled() {
   \*****************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _browser_detection__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./browser_detection */ "./node_modules/rx-player/dist/es2017/compat/browser_detection.js");
 /**
@@ -3505,7 +3465,6 @@ const isSeekingApproximate = _browser_detection__WEBPACK_IMPORTED_MODULE_0__.isT
   \*****************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ isVTTCue; }
@@ -3545,7 +3504,6 @@ function isVTTCue(cue) {
   \*******************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ makeCue; }
@@ -3607,7 +3565,6 @@ function makeCue(startTime, endTime, payload) {
   \****************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _browser_detection__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./browser_detection */ "./node_modules/rx-player/dist/es2017/compat/browser_detection.js");
 
@@ -3637,7 +3594,6 @@ const mayMediaElementFailOnUndecipherableData = _browser_detection__WEBPACK_IMPO
   \*****************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ onHeightWidthChange; }
@@ -3727,7 +3683,6 @@ function onHeightWidthChange(element, interval, cancellationSignal) {
   \*********************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ patchWebkitSourceBuffer; }
@@ -3808,7 +3763,6 @@ function patchWebkitSourceBuffer() {
   \*****************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ removeCue; }
@@ -3888,7 +3842,6 @@ function removeCue(track, cue) {
   \**********************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ shouldAwaitSetMediaKeys; }
@@ -3923,7 +3876,6 @@ function shouldAwaitSetMediaKeys() {
   \**************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ shouldFavourCustomSafariEME; }
@@ -3967,7 +3919,6 @@ function shouldFavourCustomSafariEME() {
   \***********************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ shouldReloadMediaSourceOnDecipherabilityUpdate; }
@@ -4010,7 +3961,6 @@ function shouldReloadMediaSourceOnDecipherabilityUpdate(currentKeySystem) {
   \*******************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ shouldRenewMediaKeySystemAccess; }
@@ -4050,7 +4000,6 @@ function shouldRenewMediaKeySystemAccess() {
   \******************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ shouldUnsetMediaKeys; }
@@ -4091,7 +4040,6 @@ function shouldUnsetMediaKeys() {
   \*******************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ shouldValidateMetadata; }
@@ -4132,7 +4080,6 @@ function shouldValidateMetadata() {
   \*****************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ shouldWaitForDataBeforeLoaded; }
@@ -4180,7 +4127,6 @@ function shouldWaitForDataBeforeLoaded(isDirectfile) {
   \***************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ shouldWaitForHaveEnoughData; }
@@ -4212,7 +4158,6 @@ function shouldWaitForHaveEnoughData() {
   \******************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _default_config__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./default_config */ "./node_modules/rx-player/dist/es2017/default_config.js");
 /* harmony import */ var _utils_deep_merge__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./utils/deep_merge */ "./node_modules/rx-player/dist/es2017/utils/deep_merge.js");
@@ -4255,7 +4200,6 @@ const configHandler = new ConfigHandler();
   \**********************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ createAdaptiveRepresentationSelector; }
@@ -4685,7 +4629,6 @@ function getFilteredRepresentations(representations, resolutionLimit, bitrateThr
   \**********************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ BufferBasedChooser; }
@@ -4898,7 +4841,6 @@ class BufferBasedChooser {
   \*********************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ GuessBasedChooser; }
@@ -5151,7 +5093,6 @@ function getPreviousRepresentation(representations, currentRepresentation) {
   \*******************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _adaptive_representation_selector__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./adaptive_representation_selector */ "./node_modules/rx-player/dist/es2017/core/adaptive/adaptive_representation_selector.js");
 /**
@@ -5181,7 +5122,6 @@ __webpack_require__.r(__webpack_exports__);
   \******************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ NetworkAnalyzer; },
@@ -5540,7 +5480,6 @@ class NetworkAnalyzer {
   \***************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ BandwidthEstimator; }
@@ -5625,7 +5564,6 @@ class BandwidthEstimator {
   \************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ EWMA; }
@@ -5689,7 +5627,6 @@ class EWMA {
   \*************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ filterByBitrate; }
@@ -5742,7 +5679,6 @@ function filterByBitrate(representations, bitrate) {
   \****************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ filterByResolution; }
@@ -5802,7 +5738,6 @@ function filterByResolution(representations, resolution) {
   \*************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ getBufferLevels; }
@@ -5867,7 +5802,6 @@ function getBufferLevels(bitrates) {
   \*****************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ LastEstimateStorage; }
@@ -5917,7 +5851,6 @@ class LastEstimateStorage {
   \******************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ PendingRequestsStore; }
@@ -6008,7 +5941,6 @@ class PendingRequestsStore {
   \***************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ RepresentationScoreCalculator; }
@@ -6140,7 +6072,6 @@ class RepresentationScoreCalculator {
   \*************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ selectOptimalRepresentation; }
@@ -6192,7 +6123,6 @@ function selectOptimalRepresentation(representations, wantedBitrate) {
   \***************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ CmcdDataBuilder; }
@@ -6550,7 +6480,6 @@ class CmcdDataBuilder {
   \***************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _cmcd_data_builder__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./cmcd_data_builder */ "./node_modules/rx-player/dist/es2017/core/cmcd/cmcd_data_builder.js");
 
@@ -6565,7 +6494,6 @@ __webpack_require__.r(__webpack_exports__);
   \*****************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ CdnPrioritizer; }
@@ -6737,7 +6665,6 @@ function indexOfMetadata(arr, elt) {
   \****************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _manifest_fetcher__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./manifest_fetcher */ "./node_modules/rx-player/dist/es2017/core/fetchers/manifest/manifest_fetcher.js");
 /**
@@ -6767,7 +6694,6 @@ __webpack_require__.r(__webpack_exports__);
   \***************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ ManifestFetcher; }
@@ -7328,7 +7254,6 @@ function isPromise(val) {
   \***************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _segment_queue_creator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./segment_queue_creator */ "./node_modules/rx-player/dist/es2017/core/fetchers/segment/segment_queue_creator.js");
 /**
@@ -7358,7 +7283,6 @@ __webpack_require__.r(__webpack_exports__);
   \**************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /**
  * Copyright 2015 CANAL+ Group
@@ -7418,7 +7342,6 @@ class InitializationSegmentCache {
   \*************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ applyPrioritizerToSegmentFetcher; }
@@ -7501,7 +7424,6 @@ function applyPrioritizerToSegmentFetcher(prioritizer, fetcher) {
   \*************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ createSegmentFetcher; },
@@ -7832,7 +7754,6 @@ function getSegmentFetcherRequestOptions({ maxRetry, lowLatencyMode, requestTime
   \***********************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ SegmentQueue; }
@@ -8255,7 +8176,6 @@ class SegmentQueue extends _utils_event_emitter__WEBPACK_IMPORTED_MODULE_2__["de
   \*******************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ SegmentQueueCreator; }
@@ -8348,7 +8268,6 @@ class SegmentQueueCreator {
   \**************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ TaskPrioritizer; }
@@ -8695,7 +8614,6 @@ function _findTaskIndex(taskFn, queue) {
   \******************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   getThumbnailFetcherRequestOptions: function() { return /* reexport safe */ _thumbnail_fetcher__WEBPACK_IMPORTED_MODULE_0__.getThumbnailFetcherRequestOptions; }
@@ -8714,7 +8632,6 @@ __webpack_require__.r(__webpack_exports__);
   \******************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ createThumbnailFetcher; },
@@ -8860,7 +8777,6 @@ function getThumbnailFetcherRequestOptions({ maxRetry, requestTimeout, connectio
   \**********************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ errorSelector; }
@@ -8909,7 +8825,6 @@ function errorSelector(error) {
   \************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   scheduleRequestPromise: function() { return /* binding */ scheduleRequestPromise; },
@@ -9266,7 +9181,6 @@ function scheduleRequestPromise(performRequest, options, cancellationSignal) {
   \*******************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ FreezeResolver; }
@@ -9647,7 +9561,6 @@ function normalizeBufferGap(bufferGap) {
   \*************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ ContentTimeBoundariesObserver; }
@@ -10134,7 +10047,6 @@ function getEndingPositionFromAdaptation(adaptation) {
   \********************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ createContentTimeBoundariesObserver; }
@@ -10192,7 +10104,6 @@ function createContentTimeBoundariesObserver(manifest, mediaSource, streamObserv
   \***************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ getBufferedDataPerMediaBuffer; }
@@ -10242,7 +10153,6 @@ function getBufferedDataPerMediaBuffer(mediaSourceInterface, textDisplayer) {
   \***********************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ getThumbnailData; }
@@ -10288,7 +10198,6 @@ async function getThumbnailData(fetchThumbnails, manifest, periodId, thumbnailTr
   \*************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ synchronizeSegmentSinksOnObservation; }
@@ -10320,7 +10229,6 @@ function synchronizeSegmentSinksOnObservation(observation, segmentSinksStore) {
   \************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ BufferGarbageCollector; }
@@ -10484,7 +10392,6 @@ async function clearBuffer(segmentSink, position, buffered, maxBufferBehind, max
   \***********************************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ AudioVideoSegmentSink; }
@@ -10764,7 +10671,6 @@ function assertDataIsBufferSource(data) {
   \****************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _audio_video_segment_sink__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./audio_video_segment_sink */ "./node_modules/rx-player/dist/es2017/core/segment_sinks/implementations/audio_video/audio_video_segment_sink.js");
 /**
@@ -10794,7 +10700,6 @@ __webpack_require__.r(__webpack_exports__);
   \*********************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _text_segment_sink__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./text_segment_sink */ "./node_modules/rx-player/dist/es2017/core/segment_sinks/implementations/text/text_segment_sink.js");
 
@@ -10809,7 +10714,6 @@ __webpack_require__.r(__webpack_exports__);
   \*********************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ TextSegmentSink; }
@@ -10962,7 +10866,6 @@ if (false /* __ENVIRONMENT__.DEV */) // removed by dead control flow
   \****************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   SegmentSink: function() { return /* binding */ SegmentSink; },
@@ -11091,7 +10994,6 @@ var SegmentSinkOperation;
   \************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   BufferGarbageCollector: function() { return /* reexport safe */ _garbage_collector__WEBPACK_IMPORTED_MODULE_0__["default"]; },
@@ -11135,7 +11037,6 @@ __webpack_require__.r(__webpack_exports__);
   \*********************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ BufferedHistory; }
@@ -11240,7 +11141,6 @@ class BufferedHistory {
   \**********************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   getFirstSegmentAfterPeriod: function() { return /* reexport safe */ _utils__WEBPACK_IMPORTED_MODULE_1__.getFirstSegmentAfterPeriod; },
@@ -11276,7 +11176,6 @@ __webpack_require__.r(__webpack_exports__);
   \**********************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ SegmentInventory; }
@@ -12202,7 +12101,6 @@ function prettyPrintInventory(inventory) {
   \**********************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   getFirstSegmentAfterPeriod: function() { return /* binding */ getFirstSegmentAfterPeriod; },
@@ -12266,7 +12164,6 @@ function getFirstSegmentAfterPeriod(inventory, period) {
   \**************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ SegmentSinksStore; }
@@ -12610,7 +12507,6 @@ function getChunkContextSnapshot(context) {
   \****************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ AdaptationStream; }
@@ -13061,7 +12957,6 @@ function getRepresentationList(availableRepresentations, authorizedRepIds) {
   \**********************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ getRepresentationsSwitchingStrategy; }
@@ -13193,7 +13088,6 @@ function getRepresentationsSwitchingStrategy(period, adaptation, settings, segme
   \****************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _adaptation_stream__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./adaptation_stream */ "./node_modules/rx-player/dist/es2017/core/stream/adaptation/adaptation_stream.js");
 /**
@@ -13223,7 +13117,6 @@ __webpack_require__.r(__webpack_exports__);
   \*****************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _orchestrator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./orchestrator */ "./node_modules/rx-player/dist/es2017/core/stream/orchestrator/index.js");
 /**
@@ -13253,7 +13146,6 @@ __webpack_require__.r(__webpack_exports__);
   \****************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ getTimeRangesForContent; }
@@ -13322,7 +13214,6 @@ function getTimeRangesForContent(segmentSink, contents) {
   \******************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _stream_orchestrator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./stream_orchestrator */ "./node_modules/rx-player/dist/es2017/core/stream/orchestrator/stream_orchestrator.js");
 /**
@@ -13352,7 +13243,6 @@ __webpack_require__.r(__webpack_exports__);
   \********************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ StreamOrchestrator; }
@@ -13884,7 +13774,6 @@ function needsFlushingAfterClean(observation, cleanedRanges) {
   \************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _period_stream__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./period_stream */ "./node_modules/rx-player/dist/es2017/core/stream/period/period_stream.js");
 /**
@@ -13914,7 +13803,6 @@ __webpack_require__.r(__webpack_exports__);
   \********************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ PeriodStream; }
@@ -14349,7 +14237,6 @@ function createEmptyAdaptationStream(playbackObserver, wantedBufferAhead, buffer
   \*******************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ getAdaptationSwitchStrategy; }
@@ -14499,7 +14386,6 @@ function hasCompatibleCodec(adaptation, segmentSinkCodec) {
   \********************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _representation_stream__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./representation_stream */ "./node_modules/rx-player/dist/es2017/core/stream/representation/representation_stream.js");
 /**
@@ -14529,7 +14415,6 @@ __webpack_require__.r(__webpack_exports__);
   \************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ RepresentationStream; }
@@ -14927,7 +14812,6 @@ function RepresentationStream({ content, options, playbackObserver, segmentSink,
   \*********************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ appendSegmentToBuffer; }
@@ -15027,7 +14911,6 @@ async function appendSegmentToBuffer(playbackObserver, segmentSink, dataInfos, b
   \********************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ checkForDiscontinuity; }
@@ -15276,7 +15159,6 @@ function getIndexOfLastChunkInPeriod(bufferedChunks, periodEnd) {
   \**************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ getBufferStatus; }
@@ -15495,7 +15377,6 @@ function isPeriodTheCurrentAndLastOne(manifest, period, time) {
   \****************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ getNeededSegments; }
@@ -15949,7 +15830,6 @@ function filterOutGCedSegments(segments, neededRange, getBufferedHistory) {
   \*****************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ getSegmentPriority; }
@@ -16003,7 +15883,6 @@ function getSegmentPriority(segmentTime, wantedStartTimestamp) {
   \**************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ pushInitSegment; }
@@ -16056,7 +15935,6 @@ async function pushInitSegment({ playbackObserver, content, initSegmentUniqueId,
   \***************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ pushMediaSegment; }
@@ -16137,7 +16015,6 @@ async function pushMediaSegment({ playbackObserver, bufferGoal, content, initSeg
   \**************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /**
  * Configuration file for the whole player.
@@ -17305,7 +17182,6 @@ checkIsSerializable(DEFAULT_CONFIG);
   \**************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ CustomLoaderError; }
@@ -17359,7 +17235,6 @@ class CustomLoaderError extends Error {
   \****************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ EncryptedMediaError; }
@@ -17428,7 +17303,6 @@ class EncryptedMediaError extends Error {
   \******************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   ErrorCodes: function() { return /* binding */ ErrorCodes; },
@@ -17513,7 +17387,6 @@ const ErrorCodes = {
   \********************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ errorMessage; }
@@ -17552,7 +17425,6 @@ function errorMessage(code, reason) {
   \*******************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ formatError; }
@@ -17598,7 +17470,6 @@ function formatError(error, { defaultCode, defaultReason, }) {
   \*********************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ isKnownError; }
@@ -17650,7 +17521,6 @@ function isKnownError(error) {
   \******************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ MediaError; }
@@ -17719,7 +17589,6 @@ class MediaError extends Error {
   \********************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ NetworkError; }
@@ -17800,7 +17669,6 @@ class NetworkError extends Error {
   \******************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ OtherError; }
@@ -17863,7 +17731,6 @@ class OtherError extends Error {
   \**************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ SourceBufferError; }
@@ -17920,7 +17787,6 @@ class SourceBufferError extends Error {
   \**********************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ WorkerInitializationError; }
@@ -17957,7 +17823,6 @@ class WorkerInitializationError extends Error {
   \*********************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ addFeatures; }
@@ -18008,7 +17873,6 @@ function addFeatures(featureFuncList) {
   \************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /**
  * Copyright 2015 CANAL+ Group
@@ -18053,7 +17917,6 @@ const features = {
   \**************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   addFeatures: function() { return /* reexport safe */ _add_features__WEBPACK_IMPORTED_MODULE_0__["default"]; }
@@ -18103,7 +17966,6 @@ __webpack_require__.r(__webpack_exports__);
   \******************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   DASH: function() { return /* binding */ addDASHFeature; }
@@ -18152,7 +18014,6 @@ function addDASHFeature(features) {
   \************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   DIRECTFILE: function() { return /* binding */ addDirectfileFeature; }
@@ -18196,7 +18057,6 @@ function addDirectfileFeature(features) {
   \*****************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   EME: function() { return /* binding */ addEMEFeature; }
@@ -18237,7 +18097,6 @@ function addEMEFeature(features) {
   \******************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   HTML_SAMI_PARSER: function() { return /* binding */ addHTMLSAMIFeature; }
@@ -18281,7 +18140,6 @@ function addHTMLSAMIFeature(features) {
   \*****************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   HTML_SRT_PARSER: function() { return /* binding */ addHTMLSRTFeature; }
@@ -18325,7 +18183,6 @@ function addHTMLSRTFeature(features) {
   \******************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   HTML_TTML_PARSER: function() { return /* binding */ addHTMLTTMLFeature; }
@@ -18369,7 +18226,6 @@ function addHTMLTTMLFeature(features) {
   \*****************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   HTML_VTT_PARSER: function() { return /* binding */ addHTMLVTTFeature; }
@@ -18413,7 +18269,6 @@ function addHTMLVTTFeature(features) {
   \********************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   NATIVE_SAMI_PARSER: function() { return /* binding */ addNativeSAMIFeature; }
@@ -18457,7 +18312,6 @@ function addNativeSAMIFeature(features) {
   \*******************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   NATIVE_SRT_PARSER: function() { return /* binding */ addNativeSRTFeature; }
@@ -18501,7 +18355,6 @@ function addNativeSRTFeature(features) {
   \********************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   NATIVE_TTML_PARSER: function() { return /* binding */ addNativeTTMLFeature; }
@@ -18545,7 +18398,6 @@ function addNativeTTMLFeature(features) {
   \*******************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   NATIVE_VTT_PARSER: function() { return /* binding */ addNativeVTTFeature; }
@@ -18589,7 +18441,6 @@ function addNativeVTTFeature(features) {
   \********************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   SMOOTH: function() { return /* binding */ addSmoothFeature; }
@@ -18635,7 +18486,6 @@ function addSmoothFeature(features) {
   \*****************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _compat_is_debug_mode_enabled__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./compat/is_debug_mode_enabled */ "./node_modules/rx-player/dist/es2017/compat/is_debug_mode_enabled.js");
 /* harmony import */ var _compat_patch_webkit_source_buffer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./compat/patch_webkit_source_buffer */ "./node_modules/rx-player/dist/es2017/compat/patch_webkit_source_buffer.js");
@@ -18713,7 +18563,6 @@ if (typeof __GLOBAL_SCOPE__ === "boolean" && __GLOBAL_SCOPE__) {
   \***************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _utils_logger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./utils/logger */ "./node_modules/rx-player/dist/es2017/utils/logger.js");
 /**
@@ -18745,7 +18594,6 @@ const logger = new _utils_logger__WEBPACK_IMPORTED_MODULE_0__["default"]();
   \*********************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _public_api__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./public_api */ "./node_modules/rx-player/dist/es2017/main_thread/api/public_api.js");
 /**
@@ -18775,7 +18623,6 @@ __webpack_require__.r(__webpack_exports__);
   \****************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   checkReloadOptions: function() { return /* binding */ checkReloadOptions; },
@@ -19103,7 +18950,6 @@ function parseLoadVideoOptions(options) {
   \**************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _compat_can_rely_on_video_visibility_and_size__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../compat/can_rely_on_video_visibility_and_size */ "./node_modules/rx-player/dist/es2017/compat/can_rely_on_video_visibility_and_size.js");
 /* harmony import */ var _compat_event_listeners__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../compat/event_listeners */ "./node_modules/rx-player/dist/es2017/compat/event_listeners.js");
@@ -21702,7 +21548,6 @@ Player.version = /* PLAYER_VERSION */ "4.3.0";
   \*********************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   constructPlayerStateReference: function() { return /* binding */ constructPlayerStateReference; },
@@ -21894,7 +21739,6 @@ function isLoadedState(state) {
   \*********************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ clearOnStop; }
@@ -21953,7 +21797,6 @@ async function clearOnStop(mediaElement) {
   \*************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ ContentDecryptor; },
@@ -22921,7 +22764,6 @@ function addKeyIdsFromPeriod(set, period) {
   \******************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ createOrLoadSession; }
@@ -23026,7 +22868,6 @@ async function createOrLoadSession(initializationData, stores, wantedSessionType
   \**********************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ createSession; }
@@ -23193,7 +23034,6 @@ async function createAndTryToRetrievePersistentSession(loadedSessionsStore, pers
   \************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ disposeDecryptionResources; }
@@ -23233,7 +23073,6 @@ async function disposeDecryptionResources(mediaElement) {
   \***********************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ getMediaKeySystemAccess; },
@@ -23692,7 +23531,6 @@ function isArraySubsetOf(arr1, arr2) {
   \************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ getKeySystemConfiguration; }
@@ -23740,7 +23578,6 @@ function getKeySystemConfiguration(mediaElement) {
   \**********************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ getMediaKeysInfos; }
@@ -23873,7 +23710,6 @@ async function createMediaKeys(mediaKeySystemAccess) {
   \*************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   ContentDecryptorState: function() { return /* reexport safe */ _types__WEBPACK_IMPORTED_MODULE_4__.ContentDecryptorState; },
@@ -23922,7 +23758,6 @@ __webpack_require__.r(__webpack_exports__);
   \***********************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ initMediaKeys; }
@@ -23977,7 +23812,6 @@ async function initMediaKeys(mediaElement, keySystemsConfigs, cancelSignal) {
   \*******************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   BlacklistedSessionError: function() { return /* binding */ BlacklistedSessionError; },
@@ -24247,7 +24081,6 @@ class GetLicenseTimeoutError extends Error {
   \******************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ trySettingServerCertificate; },
@@ -24350,7 +24183,6 @@ async function trySettingServerCertificate(mediaKeys, serverCertificate) {
   \*************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   ContentDecryptorState: function() { return /* binding */ ContentDecryptorState; }
@@ -24420,7 +24252,6 @@ var ContentDecryptorState;
   \****************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ areInitializationValuesCompatible; }
@@ -24578,7 +24409,6 @@ function _isAInB(a, b) {
   \********************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   DecommissionedSessionError: function() { return /* binding */ DecommissionedSessionError; },
@@ -24762,7 +24592,6 @@ function checkKeyStatuses(session, options, keySystem) {
   \***************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ cleanOldLoadedSessions; }
@@ -24817,7 +24646,6 @@ async function cleanOldLoadedSessions(loadedSessionsStore, limit) {
   \**********************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ cleanOldStoredPersistentInfo; }
@@ -24873,7 +24701,6 @@ function cleanOldStoredPersistentInfo(persistentSessionsStore, limit) {
   \*******************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ getDrmSystemId; }
@@ -24926,7 +24753,6 @@ function getDrmSystemId(keySystem) {
   \****************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ InitDataValuesContainer; }
@@ -25049,7 +24875,6 @@ function formatInitDataValues(initialValues) {
   \*******************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ isCompatibleCodecSupported; }
@@ -25093,7 +24918,6 @@ function isCompatibleCodecSupported(mimeType, codec, codecList) {
   \*******************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ isSessionUsable; }
@@ -25158,7 +24982,6 @@ function isSessionUsable(loadedSession) {
   \*******************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   areAllKeyIdsContainedIn: function() { return /* binding */ areAllKeyIdsContainedIn; },
@@ -25223,7 +25046,6 @@ function areSomeKeyIdsContainedIn(wantedKeyIds, keyIdsArr) {
   \********************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ KeySessionRecord; }
@@ -25392,7 +25214,6 @@ class KeySessionRecord {
   \***********************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ LoadedSessionsStore; }
@@ -25779,7 +25600,6 @@ async function safelyCloseMediaKeySession(mediaKeySession) {
   \*********************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _compat_eme_set_media_keys__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../compat/eme/set_media_keys */ "./node_modules/rx-player/dist/es2017/compat/eme/set_media_keys.js");
 /* harmony import */ var _errors__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../errors */ "./node_modules/rx-player/dist/es2017/errors/encrypted_media_error.js");
@@ -25975,7 +25795,6 @@ async function clearMediaKeys(mediaElement, previousState) {
   \***************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ PersistentSessionsStore; }
@@ -26323,7 +26142,6 @@ function prepareValuesForStore(initialValues) {
   \********************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ SerializableBytes; }
@@ -26385,7 +26203,6 @@ class SerializableBytes {
   \**************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _utils_hash_buffer__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../utils/hash_buffer */ "./node_modules/rx-player/dist/es2017/utils/hash_buffer.js");
 /**
@@ -26519,7 +26336,6 @@ const serverCertificateHashesMap = new WeakMap();
   \***********************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ DirectFileContentInitializer; }
@@ -26779,7 +26595,6 @@ function getDirectFileInitialTime(mediaElement, startAt) {
   \*************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ MediaSourceContentInitializer; }
@@ -27750,7 +27565,6 @@ function handleFreezeResolution(freezeResolution, { playbackObserver, enableRepr
   \**********************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   ContentInitializer: function() { return /* binding */ ContentInitializer; }
@@ -27795,7 +27609,6 @@ class ContentInitializer extends _utils_event_emitter__WEBPACK_IMPORTED_MODULE_0
   \****************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ createCorePlaybackObserver; },
@@ -27922,7 +27735,6 @@ function getPendingPaused(initialPlayPerformed, autoPlay) {
   \******************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ openMediaSource; },
@@ -28082,7 +27894,6 @@ function openMediaSource(mediaElement, unlinkSignal) {
   \***************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ getInitialTime; }
@@ -28208,7 +28019,6 @@ function getInitialTime(manifest, lowLatencyMode, startAt) {
   \*******************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ getLoadedReference; }
@@ -28291,7 +28101,6 @@ function getLoadedReference(playbackObserver, isDirectfile, cancelSignal) {
   \********************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ performInitialSeekAndPlay; }
@@ -28526,7 +28335,6 @@ function performInitialSeekAndPlay({ mediaElement, playbackObserver, startTime, 
   \****************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ initializeContentDecryption; }
@@ -28658,7 +28466,6 @@ function initializeContentDecryption(mediaElement, keySystems, callbacks, cancel
   \***********************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ MainThreadTextDisplayerInterface; }
@@ -28723,7 +28530,6 @@ class MainThreadTextDisplayerInterface {
   \*********************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ RebufferingController; }
@@ -29176,7 +28982,6 @@ class PlaybackRateUpdater {
   \*******************************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /**
  * Copyright 2015 CANAL+ Group
@@ -29221,7 +29026,6 @@ function areSameStreamEvents(evt1, evt2) {
   \**************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _stream_events_emitter__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./stream_events_emitter */ "./node_modules/rx-player/dist/es2017/main_thread/init/utils/stream_events_emitter/stream_events_emitter.js");
 /**
@@ -29251,7 +29055,6 @@ __webpack_require__.r(__webpack_exports__);
   \**************************************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _are_same_stream_events__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./are_same_stream_events */ "./node_modules/rx-player/dist/es2017/main_thread/init/utils/stream_events_emitter/are_same_stream_events.js");
 /**
@@ -29346,7 +29149,6 @@ function refreshScheduledEventsList(oldScheduledEvents, manifest) {
   \******************************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ StreamEventsEmitter; }
@@ -29539,7 +29341,6 @@ function isFiniteStreamEvent(evt) {
   \*******************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ listenToMediaError; }
@@ -29619,7 +29420,6 @@ function listenToMediaError(mediaElement, onError, cancelSignal) {
   \****************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   getCodecsWithUnknownSupport: function() { return /* binding */ getCodecsWithUnknownSupport; },
@@ -29794,7 +29594,6 @@ function updateManifestCodecSupport(manifest, contentDecryptor, isPlayingWithMSE
   \****************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ renderThumbnail; }
@@ -30002,7 +29801,6 @@ class ThumbnailRenderingError extends Error {
   \********************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ parseTextTrackToElements; }
@@ -30041,7 +29839,6 @@ function parseTextTrackToElements(type, data, timestampOffset, language) {
   \***************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ HTMLTextDisplayer; }
@@ -30366,7 +30163,6 @@ if (false /* __ENVIRONMENT__.DEV */) // removed by dead control flow
   \*************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _html_text_displayer__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./html_text_displayer */ "./node_modules/rx-player/dist/es2017/main_thread/text_displayer/html/html_text_displayer.js");
 
@@ -30381,7 +30177,6 @@ __webpack_require__.r(__webpack_exports__);
   \*****************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ TextTrackCuesStore; }
@@ -30752,7 +30547,6 @@ class TextTrackCuesStore {
   \************************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ updateProportionalElements; }
@@ -30828,7 +30622,6 @@ function updateProportionalElements(currentHeight, currentWidth, resolution, tex
   \*************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   areCuesStartNearlyEqual: function() { return /* binding */ areCuesStartNearlyEqual; },
@@ -30980,7 +30773,6 @@ function removeCuesInfosBetween(cuesInfos, start, end) {
   \*********************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ ManualTimeRanges; }
@@ -31040,7 +30832,6 @@ class ManualTimeRanges {
   \***************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _native_text_displayer__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./native_text_displayer */ "./node_modules/rx-player/dist/es2017/main_thread/text_displayer/native/native_text_displayer.js");
 
@@ -31055,7 +30846,6 @@ __webpack_require__.r(__webpack_exports__);
   \************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ parseTextTrackToCues; }
@@ -31094,7 +30884,6 @@ function parseTextTrackToCues(type, data, timestampOffset, language) {
   \*******************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ NativeTextDisplayer; }
@@ -31310,7 +31099,6 @@ if (false /* __ENVIRONMENT__.DEV */) // removed by dead control flow
   \******************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _tracks_store__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./tracks_store */ "./node_modules/rx-player/dist/es2017/main_thread/tracks_store/tracks_store.js");
 /**
@@ -31341,7 +31129,6 @@ __webpack_require__.r(__webpack_exports__);
   \***************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ MediaElementTracksStore; }
@@ -32023,7 +31810,6 @@ function disableVideoTracks(videoTracks) {
   \*****************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ TrackDispatcher; }
@@ -32197,7 +31983,6 @@ class TrackDispatcher extends _utils_event_emitter__WEBPACK_IMPORTED_MODULE_2__[
   \*************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ TracksStore; }
@@ -33343,7 +33128,6 @@ function toExposedPeriod(p) {
   \***************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ Adaptation; }
@@ -33582,7 +33366,6 @@ class Adaptation {
   \************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ CodecSupportCache; }
@@ -33655,7 +33438,6 @@ class CodecSupportCache {
   \**********************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   Adaptation: function() { return /* reexport safe */ _adaptation__WEBPACK_IMPORTED_MODULE_0__["default"]; },
@@ -33707,7 +33489,6 @@ __webpack_require__.r(__webpack_exports__);
   \*************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ Manifest; }
@@ -34179,7 +33960,6 @@ function updateDeciperability(manifest, isDecipherable) {
   \***********************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ Period; }
@@ -34426,7 +34206,6 @@ class Period {
   \*******************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _log__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../log */ "./node_modules/rx-player/dist/es2017/log.js");
 /* harmony import */ var _manifest__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../manifest */ "./node_modules/rx-player/dist/es2017/manifest/utils.js");
@@ -34803,7 +34582,6 @@ class Representation {
   \********************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ StaticRepresentationIndex; }
@@ -34979,7 +34757,6 @@ class StaticRepresentationIndex {
   \**********************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   MANIFEST_UPDATE_TYPE: function() { return /* binding */ MANIFEST_UPDATE_TYPE; }
@@ -35024,7 +34801,6 @@ var MANIFEST_UPDATE_TYPE;
   \***************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ updatePeriodInPlace; }
@@ -35215,7 +34991,6 @@ function updatePeriodInPlace(oldPeriod, newPeriod, updateType) {
   \*******************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   replacePeriods: function() { return /* binding */ replacePeriods; },
@@ -35430,7 +35205,6 @@ function updatePeriods(oldPeriods, newPeriods) {
   \**********************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   areSameContent: function() { return /* binding */ areSameContent; },
@@ -35496,7 +35270,6 @@ function getLoggableSegmentId(content) {
   \**************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   SUPPORTED_ADAPTATIONS_TYPE: function() { return /* binding */ SUPPORTED_ADAPTATIONS_TYPE; },
@@ -36070,7 +35843,6 @@ function createRepresentationFilterFromFnString(fnString) {
   \*******************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   MainSourceBufferInterface: function() { return /* binding */ MainSourceBufferInterface; },
@@ -36564,7 +36336,6 @@ function resetMediaSource(mediaSource) {
   \***********************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ triggerEndOfStream; },
@@ -36675,7 +36446,6 @@ function maintainEndOfStream(mediaSource, cancelSignal) {
   \***************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ MediaSourceDurationUpdater; }
@@ -36960,7 +36730,6 @@ function getMaximumLiveSeekablePosition(contentLastPosition) {
   \************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   MAX_32_BIT_INT: function() { return /* binding */ MAX_32_BIT_INT; }
@@ -36998,7 +36767,6 @@ const MAX_32_BIT_INT = Math.pow(2, 32) - 1;
   \*************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   createBox: function() { return /* binding */ createBox; },
@@ -37082,7 +36850,6 @@ function createBoxWithChildren(name, children) {
   \****************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   getPlayReadyKIDFromPrivateData: function() { return /* binding */ getPlayReadyKIDFromPrivateData; }
@@ -37135,7 +36902,6 @@ function getPlayReadyKIDFromPrivateData(data) {
   \**************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ extractCompleteChunks; }
@@ -37219,7 +36985,6 @@ function extractCompleteChunks(buffer) {
   \********************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ findCompleteBox; }
@@ -37289,7 +37054,6 @@ function findCompleteBox(buf, wantedName) {
   \**********************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   getBox: function() { return /* binding */ getBox; },
@@ -37538,7 +37302,6 @@ function getNextBoxOffsets(buf) {
   \*******************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   getEMSG: function() { return /* binding */ getEMSG; },
@@ -37645,7 +37408,6 @@ function getEMSG(buffer, offset = 0) {
   \****************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ takePSSHOut; },
@@ -37747,7 +37509,6 @@ function getPsshSystemID(buff, initialDataOffset) {
   \********************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   getDurationFromTrun: function() { return /* binding */ getDurationFromTrun; },
@@ -38238,7 +37999,6 @@ function getKeyIdFromInitSegment(segment) {
   \*********************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   getSegmentsFromCues: function() { return /* binding */ getSegmentsFromCues; },
@@ -38503,7 +38263,6 @@ function bytesToNumber(buffer, offset, length) {
   \***************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _manifest__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../manifest */ "./node_modules/rx-player/dist/es2017/manifest/utils.js");
 /**
@@ -38560,7 +38319,6 @@ function attachTrickModeTrack(adaptations, trickModeTracks) {
   \******************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ ContentProtectionParser; }
@@ -38775,7 +38533,6 @@ function parseContentProtection(representation, contentProtectionIr) {
   \********************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   convertSupplementalCodecsToRFC6381: function() { return /* binding */ convertSupplementalCodecsToRFC6381; }
@@ -38815,7 +38572,6 @@ function convertSupplementalCodecsToRFC6381(val) {
   \********************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ flattenOverlappingPeriods; }
@@ -38910,7 +38666,6 @@ function flattenOverlappingPeriods(parsedPeriods) {
   \*********************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ getClockOffset; }
@@ -38965,7 +38720,6 @@ function getClockOffset(serverClock) {
   \************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   getWEBMHDRInformation: function() { return /* binding */ getWEBMHDRInformation; }
@@ -39047,7 +38801,6 @@ function getWEBMHDRInformation(codecString) {
   \****************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ getHTTPUTCTimingURL; }
@@ -39087,7 +38840,6 @@ function getHTTPUTCTimingURL(mpdIR) {
   \**************************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ getMinimumAndMaximumPositions; }
@@ -39137,7 +38889,6 @@ function getMinimumAndMaximumPositions(periods) {
   \***************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ getPeriodsTimeInformation; }
@@ -39221,7 +38972,6 @@ function getPeriodsTimeInformation(periodsIR, manifestInfos) {
   \**********************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   BaseRepresentationIndex: function() { return /* reexport safe */ _indexes__WEBPACK_IMPORTED_MODULE_0__["default"]; },
@@ -39263,7 +39013,6 @@ __webpack_require__.r(__webpack_exports__);
   \*****************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ BaseRepresentationIndex; }
@@ -39569,7 +39318,6 @@ class BaseRepresentationIndex {
   \*****************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ getInitSegment; }
@@ -39629,7 +39377,6 @@ function getInitSegment(index, isEMSGWhitelisted) {
   \***************************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ getSegmentsFromTimeline; }
@@ -39755,7 +39502,6 @@ function getSegmentsFromTimeline(index, from, durationWanted, manifestBoundsCalc
   \*****************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ ListRepresentationIndex; }
@@ -40002,7 +39748,6 @@ class ListRepresentationIndex {
   \*********************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ TemplateRepresentationIndex; }
@@ -40473,7 +40218,6 @@ class TemplateRepresentationIndex {
   \******************************************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ constructTimelineFromElements; }
@@ -40540,7 +40284,6 @@ function constructTimelineFromElements(elements) {
   \***************************************************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ constructTimelineFromPreviousTimeline; }
@@ -40648,7 +40391,6 @@ function constructTimelineFromPreviousTimeline(newElements, prevTimeline) {
   \******************************************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ convertElementsToIndexSegment; }
@@ -40728,7 +40470,6 @@ function convertElementsToIndexSegment(item, previousItem, nextItem) {
   \**************************************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ findFirstCommonStartTime; }
@@ -40892,7 +40633,6 @@ function findFirstCommonStartTime(prevTimeline, newElements) {
   \***************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _timeline_representation_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./timeline_representation_index */ "./node_modules/rx-player/dist/es2017/parsers/manifest/dash/common/indexes/timeline/timeline_representation_index.js");
 /**
@@ -40922,7 +40662,6 @@ __webpack_require__.r(__webpack_exports__);
   \*************************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   parseSElementNode: function() { return /* binding */ parseSElementNode; },
@@ -41050,7 +40789,6 @@ function parseSHTMLElement(root) {
   \***************************************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ TimelineRepresentationIndex; },
@@ -41767,7 +41505,6 @@ function getLastRequestableSegmentInfo(index, manifestBoundsCalculator, scaledPe
   \*******************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   constructRepresentationUrl: function() { return /* binding */ constructRepresentationUrl; },
@@ -41892,7 +41629,6 @@ function createDashUrlDetokenizer(time, nb) {
   \******************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   getSegmentTimeRoundingError: function() { return /* binding */ getSegmentTimeRoundingError; }
@@ -41936,7 +41672,6 @@ function getSegmentTimeRoundingError(timescale) {
   \**************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ inferAdaptationType; },
@@ -42112,7 +41847,6 @@ function inferAdaptationType(adaptation, representations) {
   \*******************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ ManifestBoundsCalculator; }
@@ -42262,7 +41996,6 @@ class ManifestBoundsCalculator {
   \**************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ parseAdaptationSets; }
@@ -42722,7 +42455,6 @@ function compareAdaptations(a, b) {
   \**********************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ parseAvailabilityStartTime; }
@@ -42769,7 +42501,6 @@ function parseAvailabilityStartTime(rootAttributes, referenceDateTime) {
   \**************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ parseMpdIr; }
@@ -43089,7 +42820,6 @@ function parseCompleteIntermediateRepresentation(mpdIR, args, warnings, xlinkInf
   \******************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ parsePeriods; }
@@ -43387,7 +43117,6 @@ function generateStreamEvents(baseIr, periodStart, xmlNamespaces) {
   \*******************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ parseRepresentationIndex; }
@@ -43507,7 +43236,6 @@ function parseRepresentationIndex(representation, context) {
   \**************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ parseRepresentations; }
@@ -43765,7 +43493,6 @@ function parseRepresentations(representationsIR, adaptation, context) {
   \**********************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ resolveBaseURLs; }
@@ -43827,7 +43554,6 @@ function resolveBaseURLs(currentBaseURLs, newBaseUrlsIR) {
   \*****************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _parse_from_document__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./parse_from_document */ "./node_modules/rx-player/dist/es2017/parsers/manifest/dash/native-parser/parse_from_document.js");
 /**
@@ -43857,7 +43583,6 @@ __webpack_require__.r(__webpack_exports__);
   \**************************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   createAdaptationSetIntermediateRepresentation: function() { return /* binding */ createAdaptationSetIntermediateRepresentation; }
@@ -44242,7 +43967,6 @@ function createAdaptationSetIntermediateRepresentation(adaptationSetElement) {
   \********************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ parseBaseURL; }
@@ -44286,7 +44010,6 @@ function parseBaseURL(root) {
   \*****************************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ parseContentComponent; }
@@ -44342,7 +44065,6 @@ function parseContentComponent(root) {
   \******************************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ parseContentProtection; }
@@ -44442,7 +44164,6 @@ function parseContentProtection(contentProtectionElement) {
   \************************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ parseEventStream; }
@@ -44559,7 +44280,6 @@ function parseEvent(element) {
   \***************************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ parseInitialization; }
@@ -44616,7 +44336,6 @@ function parseInitialization(root) {
   \****************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   createMPDIntermediateRepresentation: function() { return /* binding */ createMPDIntermediateRepresentation; }
@@ -44811,7 +44530,6 @@ function createMPDIntermediateRepresentation(root) {
   \*******************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   createPeriodIntermediateRepresentation: function() { return /* binding */ createPeriodIntermediateRepresentation; }
@@ -44969,7 +44687,6 @@ function createPeriodIntermediateRepresentation(periodElement) {
   \***************************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   createRepresentationIntermediateRepresentation: function() { return /* binding */ createRepresentationIntermediateRepresentation; }
@@ -45214,7 +44931,6 @@ function createRepresentationIntermediateRepresentation(representationElement) {
   \************************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ parseSegmentBase; }
@@ -45338,7 +45054,6 @@ function parseSegmentBase(root) {
   \************************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ parseSegmentList; }
@@ -45396,7 +45111,6 @@ function parseSegmentList(root) {
   \****************************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ parseSegmentTemplate; }
@@ -45499,7 +45213,6 @@ function parseSegmentTemplate(root) {
   \****************************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ createSegmentTimelineParser; }
@@ -45544,7 +45257,6 @@ function createSegmentTimelineParser(root) {
   \***********************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ parseSegmentURL; }
@@ -45613,7 +45325,6 @@ function parseSegmentURL(root) {
   \******************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   MPDError: function() { return /* binding */ MPDError; },
@@ -45938,7 +45649,6 @@ class MPDError extends Error {
   \*******************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ parseFromDocument; }
@@ -46066,7 +45776,6 @@ function parseFromDocument(document, args) {
   \*************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _log__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../log */ "./node_modules/rx-player/dist/es2017/log.js");
 /* harmony import */ var _manifest__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../manifest */ "./node_modules/rx-player/dist/es2017/manifest/utils.js");
@@ -46612,7 +46321,6 @@ function createPSSHBox(systemId, privateData) {
   \**********************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   getAudioCodecs: function() { return /* binding */ getAudioCodecs; },
@@ -46679,7 +46387,6 @@ function getVideoCodecs(codecPrivateData) {
   \*****************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   SmoothRepresentationIndex: function() { return /* reexport safe */ _representation_index__WEBPACK_IMPORTED_MODULE_1__["default"]; }
@@ -46715,7 +46422,6 @@ __webpack_require__.r(__webpack_exports__);
   \*************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ parseCNodes; }
@@ -46791,7 +46497,6 @@ function parseCNodes(nodes) {
   \*********************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ parseProtectionNode; }
@@ -46871,7 +46576,6 @@ function parseProtectionNode(protectionNode, keySystemCreator = createWidevineKe
   \********************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ SmoothRepresentationIndex; }
@@ -47312,7 +47016,6 @@ class SmoothRepresentationIndex {
   \******************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ SharedSmoothSegmentTimeline; }
@@ -47490,7 +47193,6 @@ class SharedSmoothSegmentTimeline {
   \***********************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ _addSegmentInfos; }
@@ -47569,7 +47271,6 @@ function _addSegmentInfos(timeline, timescale, newSegment, currentSegment) {
   \******************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ parseBoolean; }
@@ -47614,7 +47315,6 @@ function parseBoolean(val) {
   \********************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ reduceChildren; }
@@ -47660,7 +47360,6 @@ function reduceChildren(root, fn, init) {
   \************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   replaceRepresentationSmoothTokens: function() { return /* binding */ replaceRepresentationSmoothTokens; },
@@ -47710,7 +47409,6 @@ function replaceSegmentSmoothTokens(url, time) {
   \*****************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ checkManifestIDs; }
@@ -47803,7 +47501,6 @@ function checkManifestIDs(manifest) {
   \***************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ clearTimelineFromPosition; }
@@ -47891,7 +47588,6 @@ function clearTimelineFromPosition(timeline, firstAvailablePosition) {
   \*****************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ getFirstPositionFromAdaptation; }
@@ -47950,7 +47646,6 @@ function getFirstPositionFromAdaptation(adaptation) {
   \****************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ getLastPositionFromAdaptation; }
@@ -48011,7 +47706,6 @@ function getLastPositionFromAdaptation(adaptation) {
   \********************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ getMaximumPosition; }
@@ -48094,7 +47788,6 @@ function getMaximumPosition(periods) {
   \*******************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ getMinimumPosition; }
@@ -48173,7 +47866,6 @@ function getMinimumPosition(periods) {
   \************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   calculateRepeat: function() { return /* binding */ calculateRepeat; },
@@ -48340,7 +48032,6 @@ function checkDiscontinuity(index, timeSec, maxPosition) {
   \**********************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ updateSegmentTimeline; }
@@ -48487,7 +48178,6 @@ function updateSegmentTimeline(oldTimeline, newTimeline) {
   \****************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _utils_is_non_empty_string__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../utils/is_non_empty_string */ "./node_modules/rx-player/dist/es2017/utils/is_non_empty_string.js");
 /* harmony import */ var _utils_is_null_or_undefined__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../utils/is_null_or_undefined */ "./node_modules/rx-player/dist/es2017/utils/is_null_or_undefined.js");
@@ -48691,7 +48381,6 @@ function parseSami(smi, timeOffset, lang) {
   \******************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _compat_make_vtt_cue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../compat/make_vtt_cue */ "./node_modules/rx-player/dist/es2017/compat/make_vtt_cue.js");
 /* harmony import */ var _utils_is_non_empty_string__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../utils/is_non_empty_string */ "./node_modules/rx-player/dist/es2017/utils/is_non_empty_string.js");
@@ -48860,7 +48549,6 @@ function parseSami(smi, timeOffset, lang) {
   \********************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ findEndOfCueBlock; }
@@ -48915,7 +48603,6 @@ function findEndOfCueBlock(linified, startIndex) {
   \*************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ getCueBlocks; }
@@ -48979,7 +48666,6 @@ function getCueBlocks(linified) {
   \***************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ parseSRTStringToHTML; }
@@ -49151,7 +48837,6 @@ function isNodeFontWithColorProp(node) {
   \*****************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ parseSRTStringToVTTCues; }
@@ -49220,7 +48905,6 @@ function toNativeCue(cueObj) {
   \********************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ parseCueBlock; }
@@ -49292,7 +48976,6 @@ function parseCueBlock(cueLines, timeOffset) {
   \**************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ parseTimestamp; }
@@ -49341,7 +49024,6 @@ function parseTimestamp(timestampString) {
   \**************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ getParameters; }
@@ -49441,7 +49123,6 @@ function getParameters(tt) {
   \***********************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   getStylingAttributes: function() { return /* binding */ getStylingAttributes; },
@@ -49588,7 +49269,6 @@ function getStylingFromElement(node) {
   \*******************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ getTimeDelimiters; }
@@ -49646,7 +49326,6 @@ function getTimeDelimiters(element, ttParams) {
   \***************************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   applyDefaultTTMLStyle: function() { return /* binding */ applyDefaultTTMLStyle; },
@@ -49723,7 +49402,6 @@ function applyDefaultTTMLStyle(paragraphStyle) {
   \*****************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ applyExtent; }
@@ -49798,7 +49476,6 @@ function applyExtent(element, extent) {
   \********************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ applyFontSize; }
@@ -49874,7 +49551,6 @@ function applyFontSize(element, fontSize) {
   \**********************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ applyLineHeight; }
@@ -49937,7 +49613,6 @@ function applyLineHeight(element, lineHeight) {
   \*****************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ applyOrigin; }
@@ -50011,7 +49686,6 @@ function applyOrigin(element, origin) {
   \******************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ applyPadding; }
@@ -50164,7 +49838,6 @@ function applyPadding(element, padding) {
   \*******************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ createElement; }
@@ -50639,7 +50312,6 @@ function createElement(paragraph, body, regions, styles, paragraphStyle, { cellR
   \******************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ generateCSSTextOutline; }
@@ -50696,7 +50368,6 @@ function generateCSSTextOutline(color, thickness) {
   \**********************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _parse_ttml_to_div__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./parse_ttml_to_div */ "./node_modules/rx-player/dist/es2017/parsers/texttracks/ttml/html/parse_ttml_to_div.js");
 /**
@@ -50730,7 +50401,6 @@ __webpack_require__.r(__webpack_exports__);
   \**************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ parseCue; }
@@ -50787,7 +50457,6 @@ function parseCue(parsedCue) {
   \**********************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ parseTTMLToDiv; }
@@ -50855,7 +50524,6 @@ function parseTTMLToDiv(str, timeOffset) {
   \****************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ ttmlColorToCSSColor; }
@@ -50945,7 +50613,6 @@ function ttmlColorToCSSColor(color) {
   \************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _parse_ttml_to_vtt__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./parse_ttml_to_vtt */ "./node_modules/rx-player/dist/es2017/parsers/texttracks/ttml/native/parse_ttml_to_vtt.js");
 /**
@@ -50979,7 +50646,6 @@ __webpack_require__.r(__webpack_exports__);
   \****************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ parseCue; }
@@ -51204,7 +50870,6 @@ function addStyle(cue, style) {
   \************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ parseTtmlToNative; }
@@ -51253,7 +50918,6 @@ function parseTtmlToNative(str, timeOffset) {
   \**********************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ parseTTMLString; }
@@ -51431,7 +51095,6 @@ function parseTTMLString(str, timeOffset) {
   \*******************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   REGXP_4_HEX_COLOR: function() { return /* binding */ REGXP_4_HEX_COLOR; },
@@ -51492,7 +51155,6 @@ const REGXP_RGBA_COLOR = /^rgba\( *(\d+) *, *(\d+) *, *(\d+) *, *(\d+) *\)/;
   \**************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ resolveStylesInheritance; }
@@ -51590,7 +51252,6 @@ function resolveStylesInheritance(styles) {
   \************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _regexps__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./regexps */ "./node_modules/rx-player/dist/es2017/parsers/texttracks/ttml/regexps.js");
 /**
@@ -51727,7 +51388,6 @@ function parseTimeFromRegExp(regex, text) {
   \*********************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   getAttributeInElements: function() { return /* binding */ getAttributeInElements; },
@@ -51901,7 +51561,6 @@ function isSpanElement(node) {
   \****************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ getCueBlocks; }
@@ -51962,7 +51621,6 @@ function getCueBlocks(linified, headerOffset) {
   \******************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ getStyleBlocks; }
@@ -52031,7 +51689,6 @@ function getStyleBlocks(linified, headerOffset) {
   \******************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ convertPayloadToHTML; }
@@ -52082,7 +51739,6 @@ function convertPayloadToHTML(text, styleElements) {
   \************************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ createDefaultStyleElements; }
@@ -52119,7 +51775,6 @@ function createDefaultStyleElements() {
   \*****************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ createStyleAttribute; }
@@ -52301,7 +51956,6 @@ const getPercentageValue = (percentageString) => {
   \****************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ createStyledElement; }
@@ -52400,7 +52054,6 @@ function createStyledElement(baseNode, styleElements) {
   \************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _parse_webvtt_to_div__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./parse_webvtt_to_div */ "./node_modules/rx-player/dist/es2017/parsers/texttracks/webvtt/html/parse_webvtt_to_div.js");
 /**
@@ -52434,7 +52087,6 @@ __webpack_require__.r(__webpack_exports__);
   \************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ parseStyleBlocks; }
@@ -52517,7 +52169,6 @@ function parseStyleBlocks(styleBlocks) {
   \**************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ parseWebVTT; }
@@ -52593,7 +52244,6 @@ function parseWebVTT(text, timeOffset) {
   \**************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ toHTML; }
@@ -52681,7 +52331,6 @@ function toHTML(cueObj, styling) {
   \**************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _parse_vtt_to_cues__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./parse_vtt_to_cues */ "./node_modules/rx-player/dist/es2017/parsers/texttracks/webvtt/native/parse_vtt_to_cues.js");
 /**
@@ -52715,7 +52364,6 @@ __webpack_require__.r(__webpack_exports__);
   \**************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ parseVTTStringToVTTCues; }
@@ -52790,7 +52438,6 @@ function parseVTTStringToVTTCues(vttStr, timeOffset) {
   \****************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ setSettingsOnCue; }
@@ -52887,7 +52534,6 @@ function setSettingsOnCue(settings, cue) {
   \**********************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ toNativeCue; }
@@ -52928,7 +52574,6 @@ function toNativeCue(cueObj) {
   \*****************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ parseCueBlock; }
@@ -53044,7 +52689,6 @@ function parseCueBlock(cueLines, timeOffset) {
   \*****************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ parseTimestamp; }
@@ -53093,7 +52737,6 @@ function parseTimestamp(timestampString) {
   \*******************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   findEndOfCueBlock: function() { return /* binding */ findEndOfCueBlock; },
@@ -53227,7 +52870,6 @@ function findEndOfCueBlock(linified, startOfCueBlock) {
   \*************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ PlaybackObserver; }
@@ -53930,7 +53572,6 @@ function getInitialObservation(mediaElement) {
   \***************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ generateReadOnlyObserver; }
@@ -53984,7 +53625,6 @@ function generateReadOnlyObserver(src, transform, cancellationSignal) {
   \********************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ ObservationPosition; }
@@ -54094,7 +53734,6 @@ class ObservationPosition {
   \*************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ constructSegmentUrl; }
@@ -54135,7 +53774,6 @@ function constructSegmentUrl(wantedCdn, segment) {
   \***************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ getEventsOutOfEMSGs; }
@@ -54244,7 +53882,6 @@ function getEventsOutOfEMSGs(parsedEMSGs, manifestPublishTime) {
   \*********************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pipelines__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pipelines */ "./node_modules/rx-player/dist/es2017/transports/dash/pipelines.js");
 /**
@@ -54278,7 +53915,6 @@ __webpack_require__.r(__webpack_exports__);
   \***********************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ initSegmentLoader; }
@@ -54401,7 +54037,6 @@ function initSegmentLoader(initialUrl, segment, options, cancelSignal, callbacks
   \********************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   addManifestIntegrityChecks: function() { return /* binding */ addManifestIntegrityChecks; },
@@ -54573,7 +54208,6 @@ function isUtf8XmlWhiteSpace(char) {
   \*****************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ loadChunkedSegmentData; }
@@ -54668,7 +54302,6 @@ async function loadChunkedSegmentData(url, requestOptions, callbacks, cancelSign
   \*******************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ generateManifestParser; }
@@ -54996,7 +54629,6 @@ function doesXmlSeemsUtf8Encoded(xmlData) {
   \*************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* export default binding */ __WEBPACK_DEFAULT_EXPORT__; }
@@ -55085,7 +54717,6 @@ function mightUseDashWasmFeature() {
   \******************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ generateSegmentLoader; },
@@ -55313,7 +54944,6 @@ function generateSegmentLoader({ lowLatencyMode, segmentLoader: customSegmentLoa
   \******************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ generateAudioVideoSegmentParser; }
@@ -55490,7 +55120,6 @@ function generateAudioVideoSegmentParser({ __priv_patchLastSegmentInSidx, }) {
   \***************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ generateTextTrackLoader; }
@@ -55621,7 +55250,6 @@ function generateTextTrackLoader({ lowLatencyMode, checkMediaSegmentIntegrity, }
   \***************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ generateTextTrackParser; }
@@ -55830,7 +55458,6 @@ function generateTextTrackParser({ __priv_patchLastSegmentInSidx, }) {
   \**************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   loadThumbnail: function() { return /* binding */ loadThumbnail; },
@@ -55922,7 +55549,6 @@ function parseThumbnail(data, context) {
   \***************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ extractTimingsInfos; }
@@ -56021,7 +55647,6 @@ function extractTimingsInfos(data, isChunked, initTimescale, segment, isLive) {
   \***********************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pipelines__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pipelines */ "./node_modules/rx-player/dist/es2017/transports/smooth/pipelines.js");
 /**
@@ -56055,7 +55680,6 @@ __webpack_require__.r(__webpack_exports__);
   \***************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ isMP4EmbeddedTrack; }
@@ -56094,7 +55718,6 @@ function isMP4EmbeddedTrack(mimeType) {
   \***************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ createAudioInitSegment; }
@@ -56164,7 +55787,6 @@ function createAudioInitSegment(timescale, channelsCount, sampleSize, packetSize
   \**************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   createAVC1Box: function() { return /* binding */ createAVC1Box; },
@@ -56523,7 +56145,6 @@ function createTENCBox(algId, ivSize, keyId) {
   \*********************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ createInitSegment; }
@@ -56606,7 +56227,6 @@ function createInitSegment(timescale, type, stsd, mhd, width, height) {
   \*****************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ createTrafBox; }
@@ -56647,7 +56267,6 @@ function createTrafBox(tfhd, tfdt, trun, mfhd, senc) {
   \***************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ createVideoInitSegment; }
@@ -56723,7 +56342,6 @@ function createVideoInitSegment(timescale, width, height, hRes, vRes, nalLength,
   \******************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ getAacesHeader; }
@@ -56783,7 +56401,6 @@ function getAacesHeader(type, frequency, chans) {
   \************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ parseTfrf; }
@@ -56847,7 +56464,6 @@ function parseTfrf(traf) {
   \************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ parseTfxd; }
@@ -56895,7 +56511,6 @@ function parseTfxd(traf) {
   \***************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ patchSegment; }
@@ -57045,7 +56660,6 @@ function updateTrunDataOffset(oldTrunBox, initialDataOffset) {
   \***************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* export default binding */ __WEBPACK_DEFAULT_EXPORT__; }
@@ -57410,7 +57024,6 @@ __webpack_require__.r(__webpack_exports__);
   \********************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _errors__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../errors */ "./node_modules/rx-player/dist/es2017/errors/custom_loader_error.js");
 /* harmony import */ var _utils_request__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../utils/request */ "./node_modules/rx-player/dist/es2017/utils/request/index.js");
@@ -57654,7 +57267,6 @@ const generateSegmentLoader = ({ checkMediaSegmentIntegrity, segmentLoader, }) =
   \***********************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   constructSegmentUrl: function() { return /* binding */ constructSegmentUrl; },
@@ -57707,7 +57319,6 @@ function constructSegmentUrl(wantedCdn, segment) {
   \*********************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ addQueryString; }
@@ -57773,7 +57384,6 @@ function addQueryString(baseUrl, supplementaryQueryStringData) {
   \***************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ byteRange; }
@@ -57811,7 +57421,6 @@ function byteRange([start, end]) {
   \********************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ callCustomManifestLoader; }
@@ -57924,7 +57533,6 @@ function callCustomManifestLoader(customManifestLoader, fallbackManifestLoader) 
   \****************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ checkISOBMFFIntegrity; }
@@ -57987,7 +57595,6 @@ function checkISOBMFFIntegrity(buffer, isInitSegment) {
   \*****************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ generateManifestLoader; }
@@ -58091,7 +57698,6 @@ function generateManifestLoader({ customManifestLoader }, preferredType, integri
   \*****************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ getISOBMFFTimingInfos; }
@@ -58175,7 +57781,6 @@ function getISOBMFFTimingInfos(buffer, isChunked, segment, initTimescale) {
   \****************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ inferSegmentContainer; }
@@ -58232,7 +57837,6 @@ function inferSegmentContainer(adaptationType, mimeType) {
   \*********************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   extractTextTrackFromISOBMFF: function() { return /* binding */ extractTextTrackFromISOBMFF; },
@@ -58385,7 +57989,6 @@ function getPlainTextTrackData(context, textTrackData, isChunked) {
   \*********************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ areArraysOfNumbersEqual; }
@@ -58435,7 +58038,6 @@ function areArraysOfNumbersEqual(arr1, arr2) {
   \***************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   parseCodec: function() { return /* binding */ parseCodec; }
@@ -58509,7 +58111,6 @@ function parseCodec(unparsedCodec) {
   \****************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ arrayFind; }
@@ -58561,7 +58162,6 @@ function arrayFind(arr, predicate, thisArg) {
   \**********************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ arrayFindIndex; }
@@ -58612,7 +58212,6 @@ function arrayFindIndex(arr, predicate, thisArg) {
   \********************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ arrayIncludes; }
@@ -58702,7 +58301,6 @@ function arrayIncludes(arr, searchElement, fromIndex) {
   \************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   AssertionError: function() { return /* binding */ AssertionError; },
@@ -58810,7 +58408,6 @@ function assertUnreachable(_) {
   \************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   base64ToBytes: function() { return /* binding */ base64ToBytes; },
@@ -59033,7 +58630,6 @@ function base64ToBytes(str) {
   \******************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   be2toi: function() { return /* binding */ be2toi; },
@@ -59297,7 +58893,6 @@ function toUint8Array(input) {
   \***********************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ cancellableSleep; }
@@ -59348,7 +58943,6 @@ function cancellableSleep(delay, cancellationSignal) {
   \********************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ createCancellablePromise; }
@@ -59415,7 +59009,6 @@ function createCancellablePromise(cancellationSignal, cb) {
   \*****************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ createUuid; }
@@ -59461,7 +59054,6 @@ function createUuid() {
   \****************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ deepMerge; }
@@ -59517,7 +59109,6 @@ function deepMerge(target, ...sources) {
   \*******************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ EventEmitter; }
@@ -59637,7 +59228,6 @@ class EventEmitter {
   \**************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ flatMap; }
@@ -59687,7 +59277,6 @@ function flatMap(originalArray, fn) {
   \**********************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ getFuzzedDelay; }
@@ -59727,7 +59316,6 @@ function getFuzzedDelay(retryDelay) {
   \******************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _is_node__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./is_node */ "./node_modules/rx-player/dist/es2017/utils/is_node.js");
 /* harmony import */ var _is_worker__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./is_worker */ "./node_modules/rx-player/dist/es2017/utils/is_worker.js");
@@ -59761,7 +59349,6 @@ else {
   \*****************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ hashBuffer; }
@@ -59817,7 +59404,6 @@ function hashBuffer(buffer) {
   \******************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ idGenerator; }
@@ -59864,7 +59450,6 @@ function idGenerator() {
   \*************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _is_worker__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./is_worker */ "./node_modules/rx-player/dist/es2017/utils/is_worker.js");
 /**
@@ -59896,7 +59481,6 @@ const isNode = typeof window === "undefined" && !_is_worker__WEBPACK_IMPORTED_MO
   \*************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ isNonEmptyString; }
@@ -59933,7 +59517,6 @@ function isNonEmptyString(x) {
   \**************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ isNullOrUndefined; }
@@ -59974,7 +59557,6 @@ function isNullOrUndefined(x) {
   \***************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /**
  * `true` if the current code is running in a WebWorker.
@@ -59991,7 +59573,6 @@ __webpack_require__.r(__webpack_exports__);
   \**************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /**
  * Copyright 2015 CANAL+ Group
@@ -60208,7 +59789,6 @@ const ISO_MAP_1_TO_3 = {
   \**************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /**
  * Copyright 2015 CANAL+ Group
@@ -60261,7 +59841,6 @@ const ISO_MAP_2_TO_3 = {
   \*********************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   normalizeAudioTrack: function() { return /* reexport safe */ _normalize__WEBPACK_IMPORTED_MODULE_0__.normalizeAudioTrack; },
@@ -60296,7 +59875,6 @@ __webpack_require__.r(__webpack_exports__);
   \*************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   normalizeAudioTrack: function() { return /* binding */ normalizeAudioTrack; },
@@ -60438,7 +60016,6 @@ function normalizeAudioTrack(_language) {
   \************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ Logger; }
@@ -60596,7 +60173,6 @@ class Logger extends _event_emitter__WEBPACK_IMPORTED_MODULE_0__["default"] {
   \*************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   scaleTimestamp: function() { return /* binding */ scaleTimestamp; }
@@ -60648,7 +60224,6 @@ const getMonotonicTimeStamp = typeof performance !== "undefined"
   \**********************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* export default binding */ __WEBPACK_DEFAULT_EXPORT__; }
@@ -60687,7 +60262,6 @@ __webpack_require__.r(__webpack_exports__);
   \*******************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /**
  * Copyright 2015 CANAL+ Group
@@ -60746,7 +60320,6 @@ function objectAssign(target, ...sources) {
   \*******************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   objectValues: function() { return /* binding */ objectValues; }
@@ -60786,7 +60359,6 @@ function objectValues(o) {
   \*********************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = (typeof queueMicrotask === "function"
     ? queueMicrotask
@@ -60803,7 +60375,6 @@ __webpack_require__.r(__webpack_exports__);
   \************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   convertToRanges: function() { return /* binding */ convertToRanges; },
@@ -61334,7 +60905,6 @@ function isTimeInTimeRanges(ranges, time) {
   \***************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   createMappedReference: function() { return /* binding */ createMappedReference; }
@@ -61631,7 +61201,6 @@ function createMappedReference(originalRef, mappingFn, cancellationSignal) {
   \*******************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ fetchRequest; },
@@ -61836,7 +61405,6 @@ function fetchIsSupported() {
   \*******************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   RequestError: function() { return /* reexport safe */ _request_error__WEBPACK_IMPORTED_MODULE_1__["default"]; },
@@ -61878,7 +61446,6 @@ __webpack_require__.r(__webpack_exports__);
   \***************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   RequestErrorTypes: function() { return /* binding */ RequestErrorTypes; },
@@ -61960,7 +61527,6 @@ const RequestErrorTypes = {
   \*****************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ request; }
@@ -62182,7 +61748,6 @@ function toJSONForIE(data) {
   \********************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ retryPromiseWithBackoff; },
@@ -62282,7 +61847,6 @@ function getRetryDelay(baseDelay, retryCount, maxDelay) {
   \***********************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ sleep; }
@@ -62311,7 +61875,6 @@ function sleep(timeInMs) {
   \**********************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /**
  * Copyright 2015 CANAL+ Group
@@ -62365,7 +61928,6 @@ function uint8ArraySlice(arr, start, end) {
   \*****************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ SortedList; }
@@ -62559,7 +62121,6 @@ class SortedList {
   \*****************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ startsWith; }
@@ -62609,7 +62170,6 @@ function startsWith(completeString, searchString, position) {
   \********************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   beUtf16ToStr: function() { return /* binding */ beUtf16ToStr; },
@@ -63006,7 +62566,6 @@ function readNullTerminatedString(buffer, offset) {
   \*******************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _noop__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./noop */ "./node_modules/rx-player/dist/es2017/utils/noop.js");
 /**
@@ -63070,7 +62629,6 @@ const SyncOrAsync = {
   \********************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   CancellationError: function() { return /* binding */ CancellationError; },
@@ -63388,7 +62946,6 @@ function createCancellationFunctions() {
   \***************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   getFilenameIndexInUrl: function() { return /* binding */ getFilenameIndexInUrl; },
@@ -63730,7 +63287,6 @@ function resolveURL(...args) {
   \***************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ warnOnce; }
@@ -63777,7 +63333,6 @@ function warnOnce(message) {
   \*********************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ WeakMapMemory; }
@@ -63875,7 +63430,6 @@ class WeakMapMemory {
   \*******************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ wrapInPromise; }
@@ -63906,126 +63460,12 @@ function wrapInPromise(val) {
 
 /***/ }),
 
-/***/ "./src/const/EventTarget.js":
-/*!**********************************!*\
-  !*** ./src/const/EventTarget.js ***!
-  \**********************************/
-/***/ (function(module) {
-
-/**
- * @author mrdoob / http://mrdoob.com
- * @author Jesús Leganés Combarro "Piranna" <piranna@gmail.com>
- */
-
-// Custom Profile for Device Testing
-
-if (typeof Event === 'undefined') {
-  var _Event = function _Event(type, eventInitDict) {
-    eventInitDict = eventInitDict || {};
-    Object.defineProperties(this, {
-      type: {
-        value: type,
-        enumerable: true
-      },
-      bubbles: {
-        value: eventInitDict.bubbles,
-        enumerable: true
-      },
-      cancelable: {
-        value: eventInitDict.cancelable,
-        enumerable: true
-      },
-      composed: {
-        value: eventInitDict.composed,
-        enumerable: true
-      }
-    });
-  };
-}
-if (typeof EventTarget === 'undefined') {
-  var _EventTarget = function _EventTarget() {
-    var listeners = {};
-    this.addEventListener = function (type, listener) {
-      if (!listener) return;
-      var listeners_type = listeners[type];
-      if (listeners_type === undefined) listeners[type] = listeners_type = [];
-      for (var i = 0, l; l = listeners_type[i]; i++) if (l === listener) return;
-      listeners_type.push(listener);
-    };
-    this.dispatchEvent = function (event) {
-      if (event._dispatched) throw 'InvalidStateError';
-      Object.defineProperty(event, '_dispatched', {
-        value: true
-      });
-      var type = event.type;
-      if (type == null || type == '') throw 'UNSPECIFIED_EVENT_TYPE_ERR';
-      var listenerArray = listeners[type] || [];
-      var dummyListener = this['on' + type];
-      if (dummyListener instanceof Function) listenerArray = listenerArray.concat(dummyListener);
-      var stopImmediatePropagation = false;
-      Object.defineProperties(event, {
-        cancelable: {
-          value: true,
-          enumerable: true
-        },
-        defaultPrevented: {
-          value: false,
-          enumerable: true
-        },
-        isTrusted: {
-          value: false,
-          enumerable: true
-        },
-        target: {
-          value: this,
-          enumerable: true
-        },
-        timeStamp: {
-          value: new Date().getTime(),
-          enumerable: true
-        }
-      });
-      event.preventDefault = function () {
-        if (this.cancelable) Object.defineProperty(this, 'defaultPrevented', {
-          value: true
-        });
-      };
-      event.stopPropagation = function () {
-        stopPropagation = true;
-      };
-      event.stopImmediatePropagation = function () {
-        stopImmediatePropagation = true;
-      };
-      for (var i = 0, listener; listener = listenerArray[i]; i++) {
-        if (stopImmediatePropagation) break;
-        listener.call(this, event);
-      }
-      return !event.defaultPrevented;
-    };
-    this.removeEventListener = function (type, listener) {
-      if (!listener) return;
-      var listeners_type = listeners[type];
-      if (listeners_type === undefined) return;
-      for (var i = 0, l; l = listeners_type[i]; i++) if (l === listener) {
-        listeners_type.splice(i, 1);
-        break;
-      }
-      if (!listeners_type.length) delete listeners[type];
-    };
-  };
-  ;
-}
-if ( true && module.exports) module.exports = EventTarget;
-
-/***/ }),
-
 /***/ "./src/const/appConfig.js":
 /*!********************************!*\
   !*** ./src/const/appConfig.js ***!
   \********************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   PLAYER_VERSION: 'player-version',
@@ -64064,7 +63504,6 @@ __webpack_require__.r(__webpack_exports__);
   \********************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 var appEvents = {
   // Basic events
@@ -64087,7 +63526,6 @@ var appEvents = {
   \*******************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 var appState = {
   LOADING: 'LOADING',
@@ -64108,7 +63546,6 @@ var appState = {
   \********************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   OTTMediaPlayer: function() { return /* reexport safe */ _rxplayer_player__WEBPACK_IMPORTED_MODULE_0__["default"]; }
@@ -64125,7 +63562,6 @@ __webpack_require__.r(__webpack_exports__);
   \*****************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   ErrorCodeType: function() { return /* binding */ ErrorCodeType; },
@@ -64155,7 +63591,6 @@ var ErrorCodeType = {
   \******************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 // https://developers.canal-plus.com/rx-player/versions/4.3.0/doc/api/Player_Events.html
 
@@ -64231,7 +63666,6 @@ var playerEvents = {
   \******************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 // https://developers.canal-plus.com/rx-player/versions/4.3.0/doc/api/Player_States.html
 
@@ -64257,7 +63691,6 @@ var playerState = {
   \******************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var rx_player__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! rx-player */ "./node_modules/rx-player/dist/es2017/index.js");
 /* harmony import */ var _const_playerEvents__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./const/playerEvents */ "./src/solutions/rxplayer/const/playerEvents.js");
@@ -64265,8 +63698,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _const_playerError__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./const/playerError */ "./src/solutions/rxplayer/const/playerError.js");
 /* harmony import */ var _const_appEvents__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../const/appEvents */ "./src/const/appEvents.js");
 /* harmony import */ var _utils_logger__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../utils/logger */ "./src/utils/logger.js");
-/* harmony import */ var _const_EventTarget__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../const/EventTarget */ "./src/const/EventTarget.js");
-/* harmony import */ var _const_EventTarget__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_const_EventTarget__WEBPACK_IMPORTED_MODULE_6__);
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -64286,6 +63717,7 @@ function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e 
 
 
 
+// import EventTarget from '../../const/EventTarget';
 
 rx_player__WEBPACK_IMPORTED_MODULE_0__["default"].LogFormat = 'full'; // "standard", "full"
 rx_player__WEBPACK_IMPORTED_MODULE_0__["default"].LogLevel = 'NONE'; // "NONE", "ERROR", "WARNING", "INFO", "DEBUG"
@@ -64303,7 +63735,7 @@ var RxMediaPlayer = /*#__PURE__*/function () {
     this.drmConfig = drmConfig;
     // Player Info
     this.player = null;
-    this.customEvent = new (_const_EventTarget__WEBPACK_IMPORTED_MODULE_6___default())();
+    this.customEvent = new EventTarget();
   }
   return _createClass(RxMediaPlayer, [{
     key: "initialize",
@@ -64888,7 +64320,6 @@ var RxMediaPlayer = /*#__PURE__*/function () {
   \***************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _logger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./logger */ "./src/utils/logger.js");
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
@@ -65261,7 +64692,6 @@ var KeyboardControls = /*#__PURE__*/function () {
   \*****************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _const_appConfig__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../const/appConfig */ "./src/const/appConfig.js");
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
@@ -65360,7 +64790,6 @@ Logger.levelKey = {
   \****************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _const_appConfig__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../const/appConfig */ "./src/const/appConfig.js");
 /* harmony import */ var _keyboardControls__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./keyboardControls */ "./src/utils/keyboardControls.js");
@@ -65485,18 +64914,6 @@ var Utils = /*#__PURE__*/function () {
 /******/ 	}
 /******/ 	
 /************************************************************************/
-/******/ 	/* webpack/runtime/compat get default export */
-/******/ 	!function() {
-/******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__webpack_require__.n = function(module) {
-/******/ 			var getter = module && module.__esModule ?
-/******/ 				function() { return module['default']; } :
-/******/ 				function() { return module; };
-/******/ 			__webpack_require__.d(getter, { a: getter });
-/******/ 			return getter;
-/******/ 		};
-/******/ 	}();
-/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	!function() {
 /******/ 		// define getter functions for harmony exports
@@ -65539,9 +64956,8 @@ var Utils = /*#__PURE__*/function () {
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry needs to be wrapped in an IIFE because it needs to be in strict mode.
+// This entry needs to be wrapped in an IIFE because it needs to be isolated against other modules in the chunk.
 !function() {
-"use strict";
 /*!********************!*\
   !*** ./src/app.js ***!
   \********************/
