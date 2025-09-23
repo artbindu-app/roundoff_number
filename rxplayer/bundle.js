@@ -65588,7 +65588,12 @@ var App = /*#__PURE__*/function () {
     key: "loadSelectedStream",
     value: function loadSelectedStream() {
       var selectedStreamInfo = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
-      this.stream = selectedStreamInfo ? selectedStreamInfo : this.stream;
+      this.stream = localManifest ? localManifest : selectedStreamInfo ? selectedStreamInfo : this.stream;
+      var localManifest = localStorage.getItem('manifestURL');
+      this.stream.manifestURL = localManifest || this.stream.manifestURL;
+      this.logger.info("Loading stream info: ".concat(JSON.stringify(this.stream)));
+
+      // Player related config
       this.manifestUrl = this.stream.manifestURL;
       this.drmConfig = this.stream.drmOptions || null;
       this.playerConfig = {
@@ -65722,8 +65727,8 @@ var App = /*#__PURE__*/function () {
   }, {
     key: "destroy",
     value: function destroy() {
-      if (this.player) {
-        this.player.destroy();
+      if (this.myPlayer) {
+        this.myPlayer.destroy();
       }
       // Clean up keyboard controls
       if (this.keyboardControls) {
@@ -65796,7 +65801,7 @@ var App = /*#__PURE__*/function () {
     key: "changeVideoResolution",
     value: function changeVideoResolution() {
       this.logger.info("Video resolution quality changed to ".concat(this.uiButtons.VIDEO_RESOLUTION_LIST.value));
-      this.player.setVideoResolution({
+      this.myPlayer.setVideoResolution({
         id: this.uiButtons.VIDEO_RESOLUTION_LIST.value
       });
     }
@@ -65813,7 +65818,7 @@ var App = /*#__PURE__*/function () {
     key: "changeAudioResolution",
     value: function changeAudioResolution() {
       this.logger.info("Audio resolution quality changed to ".concat(this.uiButtons.AUDIO_RESOLUTION_LIST.value));
-      this.player.setAudioResolution({
+      this.myPlayer.setAudioResolution({
         id: this.uiButtons.AUDIO_RESOLUTION_LIST.value
       });
     }
@@ -65963,8 +65968,8 @@ var App = /*#__PURE__*/function () {
         console.warn('Unknown asset type selected:', type);
         return;
       }
-      if (this.player) {
-        this.player.stop();
+      if (this.myPlayer) {
+        this.myPlayer.stop();
         this.destroy();
       }
       // Reset the events bound flags when switching assets
