@@ -59,6 +59,7 @@
                 const isCurrentVersionSecure = arr1[i].security ? '🛡️' : '';
                 const ltsVersion = arr2[i].version.replace(/v/gi, '');
                 const isLTSVersionSecure = arr2[i].security ? '🛡️' : '';
+
                 st += `<tr>
                             <th>
                                 <a href="${getReleaseInfo(currentVersion)}" target="blank" title="View Release Note">
